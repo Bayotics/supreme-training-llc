@@ -12,6 +12,7 @@ import Slider from '../components/Slider';
 import AboutUs from '../components/AboutUs';
 import WhyUs from '../components/WhyUs';
 import Blog from '../components/Blog';
+import Testimonials from '../components/Testimonials';
 
 // import data from '../data';
 
@@ -77,6 +78,9 @@ function HomeScreen() {
         </div>
         <div>
           <Blog />
+        </div>
+        <div>
+          <Testimonials />
         </div>
         {/* <h1 className='text-center mt-4'><span className='theme-color'>FEATURED </span> PRODUCTS</h1>
         <div className="products" id = "featured-products">

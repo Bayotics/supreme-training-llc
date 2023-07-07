@@ -36,7 +36,7 @@ const AboutScreen = () => {
             </Row>
                 <hr className="featurette-divider" />
 
-                <div className="row featurette ">
+                {/* <div className="row featurette ">
                     <div className="col-md-7">
                         <h2 className="featurette-heading fw-normal lh-1">Fast and Easy Payments.</h2>
                         <p className="lead">Make Payments for your favorite products with ease. Any time, wherever you are in the world</p>
@@ -76,7 +76,7 @@ const AboutScreen = () => {
                         </div>
                     </div>
                 </div>
-                <hr className="featurette-divider" />
+                <hr className="featurette-divider" /> */}
 
                 <h3 className='text-center'>Meet Our Team</h3>
                 <div className='d-flex justify-content-around team-main'>
@@ -86,7 +86,7 @@ const AboutScreen = () => {
                              style={{height: '250px', width: '250px', borderRadius: '50%', marginTop: '15px'}}
                              alt = "about-one" />
                         </div>
-                        <h2 className="fw-normal">Unclebayotics</h2>
+                        <h2 className="fw-normal">Uncle bayo</h2>
                         <p>Team Lead</p>
                     </div>
                     <div className='text-center'>
@@ -104,8 +104,8 @@ const AboutScreen = () => {
                             style={{height: '250px', width: '250px', borderRadius: '50%', marginTop: '15px'}} 
                             alt = "about-one" />
                         </div>
-                        <h2 className="fw-normal">John Doe</h2>
-                        <p>Head designer</p>
+                        <h2 className="fw-normal">Mr Kareem</h2>
+                        <p>Head tutor</p>
                     </div>
                 </div>
 </div>

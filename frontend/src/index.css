@@ -479,3 +479,24 @@ product-details-tab {
 .team-main{
   margin-top: 50px;;
 }
+.testimonials-section{
+  background-image: url(../src/assets/test_bg.png);
+  background-size: cover;
+  width: 100%;
+  height:600px;
+}
+.testimonial-inner{
+  height: 70%;
+  margin-top: 180px;
+  margin-left: 50px;
+}
+.testimonial-pfp{
+  border-radius: 50%;
+}
+.test-p{
+  font-weight: 100;
+  font-size: 13px;
+}
+.testimonials-carousel{
+  margin-top: 80px;
+}
