@@ -11,7 +11,7 @@ const Testimonials = () => {
         <div className="mt-4 testimonials-section text-white">
             <Row>
                 <Col>
-                    <div className='border testimonial-inner'>
+                    <div className=' testimonial-inner'>
                         <h2>TESTIMONIALS</h2>
                         <p className='text-light mt-0'>Here are testimonials from some of our clients...</p>
                         <div className='testimonials-carousel'>
