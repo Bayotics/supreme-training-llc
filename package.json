@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bayotics/mern-E-commerce.git"
+    "url": "git+https://github.com/Bayotics/supreme-training-llc.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bayotics/mern-E-commerce/issues"
+    "url": "https://github.com/Bayotics/supreme-training-llc/issues"
   },
-  "homepage": "https://github.com/Bayotics/mern-E-commerce#readme"
+  "homepage": "https://github.com/Bayotics/supreme-training-llc#readme"
 }
