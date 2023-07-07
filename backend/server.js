@@ -7,7 +7,7 @@ import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import orderRouter from './routes/orderRoutes.js';
 import paymentRouter from './routes/paymentRoutes.js';
-import uploadRouter from './routes/uploadRoutes.js';
+import uploadRouter from './routes/UploadRoutes.js';
 import Product from './models/productModel.js';
 import User from './models/userModel.js';
 import Payment from './models/paymentModel.js';
