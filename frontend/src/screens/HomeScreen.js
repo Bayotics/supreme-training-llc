@@ -59,7 +59,7 @@ function HomeScreen() {
       <div className='border' id = "main-products">
 
         <Helmet>
-          <title>SHOPiT</title>
+          <title>Supreme training llc</title>
         </Helmet>
         <div >
           <Categories />
