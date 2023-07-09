@@ -661,7 +661,7 @@ product-details-tab {
   height: 100%;
   width: 100%;
  }
- @media screen and (max-width: 360px) {
+ @media screen and (min-width: 360px) and (max-width: 370px) {
   .featurette-divider{
     margin-top: 150px;
   }
@@ -815,7 +815,7 @@ product-details-tab {
     margin-left: 0px;
   }
  }
- @media screen and (max-width: 375px) {
+ @media screen and (min-width: 375px) and (max-width: 385px){
   #about-img {
       position: absolute;
       height: 300px;
@@ -834,7 +834,7 @@ product-details-tab {
     margin-top: 300px;
   }
  }
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 390px) and (max-width: 395px){
  #root{
   width: 100%;
  }
@@ -951,7 +951,10 @@ product-details-tab {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media (min-width: 413px) and (max-width: 420px) {
+  body{
+    /* background-color: tan; */
+  }
   #root {
     width: 100%;
   }
@@ -963,19 +966,19 @@ product-details-tab {
     height: 100px;
     width: 100px;
     display: block;
-    position: relative;
-    margin-bottom: 90px;
-    right: 55px;
+    position: absolute;
+    top: -120px;
+    left: -50px;
   }
   #mail-logo{
     display: none;
   }
   #carousel-image {
-    height: 500px
+    height: 450px
   }
 
   #carousel-caption {
-    margin-bottom: 50px;
+    margin-bottom: -90px;
   }
 
   #carousel-caption h1 {
@@ -992,7 +995,8 @@ product-details-tab {
 
   #carousel-button {
     height: 60px;
-    width: 200px
+    width: 200px;
+    margin-bottom: 150px;
   }
 
   #carousel-btn-caption {
@@ -1018,7 +1022,11 @@ product-details-tab {
   }
 
   #category-main img {
-    width: 85px;
+    width: 75px;
+  }
+  #category-main p{
+    font-size: 12px;
+    text-align: center;
   }
 
   #category-header {
@@ -1096,7 +1104,7 @@ product-details-tab {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 430px) and (max-width: 435px){
   #root {
     width: 100%;
   }
@@ -1240,15 +1248,15 @@ product-details-tab {
     margin-left: 0px;
   }
 }
-@media screen and (max-width: 590px) {
-  #carousel-logo {
+@media screen and (min-width: 589.5px) and (max-width: 595px){
+  /* #carousel-logo {
   height: 100px;
   width: 100px;
   display: block;
   position: relative;
   margin-bottom: 285px;
   right: 80px;
-  }
+  } */
 
   #mail-logo {
     display: none;
@@ -1382,7 +1390,7 @@ product-details-tab {
     margin-right: -140px;
   }
 }
-@media screen and (max-width: 645px) {
+@media screen and (min-width: 645px) and (max-width: 650px){
   #carousel-logo {
     height: 100px;
     width: 100px;

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 function Slider() {
   return (
     <Carousel>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={5000}>
         <img
           id='carousel-image'
           className="d-block w-100"
@@ -30,7 +30,7 @@ function Slider() {
             </Link>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={5000}>
         <img
           id='carousel-image'
           className="d-block w-100"
@@ -50,7 +50,7 @@ function Slider() {
             </Link>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={5000}>
         <img
           id='carousel-image'
           className="d-block w-100"
