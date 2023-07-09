@@ -13,7 +13,7 @@ const Blog = () => {
         <div className="full">
           <div className="main_heading text_align_left">
             <h1 id = "" style={{marginTop: "60px"}} className='text-center'>
-            <span className='theme-color'>LATEST   </span>FROM OUR BLOG
+            <span className='theme-color'>LATEST</span><span id = "blog-span"> FROM OUR</span> BLOG
         </h1>
           </div>
         </div>

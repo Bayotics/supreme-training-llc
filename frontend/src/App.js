@@ -41,6 +41,7 @@ import UserEditScreen from './screens/UserEditScreen';
 import AboutScreen from './screens/AboutScreen';
 import DropdownItem from 'react-bootstrap/esm/DropdownItem';
 import logo from './assets/MainLogo.png'
+import Footer from './components/Footer';
 
 
 function App() {
@@ -87,7 +88,7 @@ function App() {
         }
       >
         <ToastContainer position="bottom-center" limit={1} />
-        <header className='mt-20'>
+        <header className=''>
           <Navbar bg="white" variant="white" expand="lg">
             <Container id = "main-container">
                <Button
@@ -103,7 +104,9 @@ function App() {
                   alt='logo' />
                 </Navbar.Brand>
               </LinkContainer>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Toggle aria-controls="basic-navbar-nav" id = "navbar-toggler">
+                <i className="fas fa-bars"></i>
+              </Navbar.Toggle>
               <Navbar.Collapse id="basic-navbar-nav">
                   <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
@@ -307,7 +310,7 @@ function App() {
           </Container>
         </main>
         <footer>
-          <div className="text-center">All rights reserved</div>
+          <Footer />
         </footer>
       </div>
     </BrowserRouter>

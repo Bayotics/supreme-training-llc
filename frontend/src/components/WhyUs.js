@@ -15,7 +15,7 @@ const WhyUs = () => {
             <span className='theme-color'>WHY </span>US?
         </h1>
         <p className="display-7 text-normal text-center text-muted">Fastest certifications with the best rates</p>
-        <div>
+        <div id='whyus-top'>
             <div className='d-flex justify-content-around'>
                 <div className=''>
                     <img src={fast} style={{height: "100px", width: "100px"}} alt = "fast" />
@@ -35,7 +35,7 @@ const WhyUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className=''>
+                <div className='last-two'>
                     <img src={expert} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Secure Payments</h5>
                     <div className='mt-4' style={{height: "100px", width: "190px"}}>
@@ -56,7 +56,7 @@ const WhyUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className=''>
+                <div>
                     <img src={warranty} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Highly Profitable Courses</h5>
                     <div className='mt-4' style={{height: "100px", width: "190px"}}>
@@ -65,7 +65,7 @@ const WhyUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className=''>
+                <div className='last-two'>
                     <img src={award} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Award winning</h5>
                     <div className='mt-4' style={{height: "100px", width: "190px"}}>

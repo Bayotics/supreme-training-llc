@@ -65,21 +65,21 @@ function HomeScreen() {
       <div className='' id = "main-products">
 
         <Helmet>
-          <title>SHOPiT</title>
+          <title>Supreme information Training </title>
         </Helmet>
-        <div>
+        <div id = "about-div">
           <AboutUs />
         </div>
-        <div >
+        <div id = "categories-div">
           <Categories />
         </div>
-        <div>
+        <div id = "whyus-div">
           <WhyUs />
         </div>
-        <div>
+        <div id = "blog-div">
           <Blog />
         </div>
-        <div>
+        <div id = "testimonials-div">
           <Testimonials />
         </div>
         {/* <h1 className='text-center mt-4'><span className='theme-color'>FEATURED </span> PRODUCTS</h1>

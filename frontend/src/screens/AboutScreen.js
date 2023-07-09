@@ -78,34 +78,34 @@ const AboutScreen = () => {
                 </div>
                 <hr className="featurette-divider" /> */}
 
-                <h3 className='text-center'>Meet Our Team</h3>
-                <div className='d-flex justify-content-around team-main'>
-                    <div className='text-center'>
+                <h3 className='text-center about-screen-header'>Meet Our Team</h3>
+                <div className='row team-main'>
+                    <div className='col text-center'>
                         <div className="team-circle">
                             <img src={about3} 
                              style={{height: '250px', width: '250px', borderRadius: '50%', marginTop: '15px'}}
                              alt = "about-one" />
                         </div>
-                        <h2 className="fw-normal">Uncle bayo</h2>
-                        <p>Team Lead</p>
+                        <h2 id="team-title" className="fw-normal">Uncle bayo</h2>
+                        <p id="team-title" >Team Lead</p>
                     </div>
-                    <div className='text-center'>
+                    <div className='col text-center'>
                         <div className="team-circle">
                             <img src={about1}
                              style={{height: '250px', width: '250px', borderRadius: '50%', marginTop: '15px'}} 
                              alt = "about-one" />
                         </div>
-                        <h2 className="fw-normal">Bayospending</h2>
-                        <p>Product manager</p>
+                        <h2  id="team-title"className="fw-normal">Bayospending</h2>
+                        <p id="team-title">Product manager</p>
                     </div>
-                    <div className='text-center'>
+                    <div className='col text-center'>
                         <div className="team-circle">
                             <img src={about2} 
                             style={{height: '250px', width: '250px', borderRadius: '50%', marginTop: '15px'}} 
                             alt = "about-one" />
                         </div>
-                        <h2 className="fw-normal">Mr Kareem</h2>
-                        <p>Head tutor</p>
+                        <h2  id="team-title"className="fw-normal">Mr Kareem</h2>
+                        <p id="team-title">Head tutor</p>
                     </div>
                 </div>
 </div>

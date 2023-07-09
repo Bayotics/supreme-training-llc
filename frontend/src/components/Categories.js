@@ -16,7 +16,7 @@ import redhat from '../assets/redhat.png';
 import citrix from '../assets/citrix.jpg';
 import security from '../assets/security.jpg';
 import devops from '../assets/devops.jpg';
-import pmp from '../assets/pmp.jpg';
+import pmp from '../assets/pmp.png';
 import isc from '../assets/isc.jpg';
 import isaca from '../assets/isaca.jpg';
 import music from '../assets/music.jpg';
@@ -31,66 +31,65 @@ import women_fashion from '../assets/women_fashion.jpg';
 import women_shoes from '../assets/women_shoes.jpg';
 const Categories = () => {
     return(
-        <div className='mt-4'>
-            <h1 id = "" style={{marginTop: "90px"}} className='text-center'><span className='theme-color'>TOP </span>CATEGORIES</h1>
-            <Carousel variant='dark'>
+        <div className='mt-4' id = "category-main">
+        <h1 id = "category-header" className='text-center'><span className='theme-color'>TOP </span>CATEGORIES</h1>
+        <Carousel variant='dark'>
             <Carousel.Item interval={1000}>
             <div className='row'>
-            <div className="col-3" id = "phones-and-tab">
-                <Link to={'/search?category=aws'} className = 'nav-link text-dark'>
-                    <div  id = "category-item">
-                        <div className="bg-light aws" id = "category-inner">
-                            <img
-                                src={aws}
-                                style={{height: "100%", width: "100%"}}
-                                alt= "aws"/>
+                <div className="col-3" id = "phones-and-tab">
+                    <Link to={'/search?category=aws'} className = 'nav-link text-dark'>
+                        <div  id = "category-item">
+                            <div className="bg-light aws" id = "category-inner">
+                                <img
+                                    src={aws}
+                                    alt= "aws"/>
+                            </div>
+                            <p className='mt-2 text-center'>AWS</p>
                         </div>
-                        <p className='mt-2 text-center'>AWS</p>
-                    </div>
-                </Link>
-            </div>
-            <div className="col-3 d-inline">
-                <Link className = 'nav-link text-dark' to={'/search?category=cisco'}>
-                    <div  id = "category-item">
-                        <div className="bg-light cisco" id = "category-inner">
-                            <img
-                                src={cisco}
-                                style={{height: "100%", width: "100%"}}
-                                alt= "cisco"/>
+                    </Link>
+                </div>
+                <div className="col-3 d-inline">
+                    <Link className = 'nav-link text-dark' to={'/search?category=cisco'}>
+                        <div  id = "category-item">
+                            <div className="bg-light cisco" id = "category-inner">
+                                <img
+                                    src={cisco}
+                                     
+                                    alt= "cisco"/>
+                            </div>
+                            <p className='mt-2 text-center'>CISCO</p>
                         </div>
-                        <p className='mt-2 text-center'>CISCO</p>
-                    </div>
-                </Link>
-            </div>
-            <div className="col-3">
-                <Link className = 'nav-link text-dark' to={'/search?category=azure'}>
-                    <div  id = "category-item">
-                        <div className="  bg-light azure" id = "category-inner">
-                            <img
-                                src={azure}
-                                style={{height: "100%", width: "100%"}}
-                                alt= "azure"/>
+                    </Link>
+                </div>
+                <div className="col-3">
+                    <Link className = 'nav-link text-dark' to={'/search?category=azure'}>
+                        <div  id = "category-item">
+                            <div className="  bg-light azure" id = "category-inner">
+                                <img
+                                    src={azure}
+                                     
+                                    alt= "azure"/>
+                            </div>
+                            <p className='mt-2 text-center'>AZURE</p>
                         </div>
-                        <p className='mt-2 text-center'>AZURE</p>
-                    </div>
-                </Link>
-            </div>
-            <div className="col-3">
-                <Link className = 'nav-link text-dark' to={'/search?category=google%20cloud'}>
-                    <div  id = "category-item">
-                        <div className="bg-light google-cloud" id = "category-inner">
-                            <img
-                                src={google_cloud}
-                                style={{height: "100%", width: "100%"}}
-                                alt= "google cloud"/>
+                    </Link>
+                </div>
+                <div className="col-3">
+                    <Link className = 'nav-link text-dark' to={'/search?category=google%20cloud'}>
+                        <div  id = "category-item">
+                            <div className="bg-light google-cloud" id = "category-inner">
+                                <img
+                                    src={google_cloud}
+                                     
+                                    alt= "google cloud"/>
+                            </div>
+                            <p className='mt-2 text-center'>GOOGLE CLOUD</p>
                         </div>
-                        <p className='mt-2 text-center'>GOOGLE CLOUD</p>
-                    </div>
-                </Link>
+                    </Link>
+                </div>
             </div>
-        </div>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={1000}>
         <div className='row'>
             <div className="col-3">
                 <Link className = 'nav-link text-dark' to={'/search?category=comptia'}>
@@ -98,7 +97,7 @@ const Categories = () => {
                         <div className="  bg-light comptia" id = "category-inner">
                             <img
                                 src={comptia}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "comptia"/>
                         </div>
                         <p className='mt-2 text-center'>COMPTIA</p>
@@ -111,7 +110,7 @@ const Categories = () => {
                         <div className="  bg-light ibm" id = "category-inner">
                             <img
                                 src={ibm}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "ibm"/>
                         </div>
                         <p className='mt-2 text-center'>IBM</p>
@@ -124,7 +123,7 @@ const Categories = () => {
                         <div className="  bg-light alibaba" id = "category-inner">
                             <img
                                 src={alibaba}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "alibaba"/>
                         </div>
                         <p className='mt-2 text-center'>ALIBABA CLOUD</p>
@@ -137,7 +136,7 @@ const Categories = () => {
                         <div className="  bg-light vmware" id = "category-inner">
                             <img
                                 src={vmware}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "vmware"/>
                         </div>
                         <p className='mt-2 text-center'>VMWARE</p>
@@ -154,7 +153,7 @@ const Categories = () => {
                         <div className="  bg-light oracle" id = "category-inner">
                             <img
                                 src={oracle}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "oracle"/>
                         </div>
                         <p className='mt-2 text-center'>ORACLE CLOUD</p>
@@ -167,7 +166,7 @@ const Categories = () => {
                         <div className="  bg-light salesforce" id = "category-inner">
                             <img
                                 src={salesforce}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "salesforce"/>
                         </div>
                         <p className='mt-2 text-center'>SALESFORCE</p>
@@ -180,7 +179,7 @@ const Categories = () => {
                         <div className="  bg-light redhat" id = "category-inner">
                             <img
                                 src={redhat}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "furniture"/>
                         </div>
                         <p className='mt-2 text-center'>REDHAT</p>
@@ -193,7 +192,7 @@ const Categories = () => {
                         <div className="  bg-light security" id = "category-inner">
                             <img
                                 src={security}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "security"/>
                         </div>
                         <p className='mt-2 text-center'>COMPUTER SECURITY</p>
@@ -210,7 +209,7 @@ const Categories = () => {
                         <div className="  bg-light citrix" id = "category-inner">
                             <img
                                 src={citrix}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "citrix"/>
                         </div>
                         <p className='mt-2 text-center'>CITRIX</p>
@@ -223,7 +222,7 @@ const Categories = () => {
                         <div className="  bg-light devops" id = "category-inner">
                             <img
                                 src={devops}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "devops"/>
                         </div>
                         <p className='mt-2 text-center'>DEVOPS</p>
@@ -236,7 +235,7 @@ const Categories = () => {
                         <div className="  bg-light isc" id = "category-inner">
                             <img
                                 src={isc}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "isc"/>
                         </div>
                         <p className='mt-2 text-center'>(ISC)²</p>
@@ -249,7 +248,7 @@ const Categories = () => {
                         <div className="  bg-light pmp" id = "category-inner">
                             <img
                                 src={pmp}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "pmp"/>
                         </div>
                         <p className='mt-2 text-center'>PMP</p>
@@ -266,7 +265,7 @@ const Categories = () => {
                         <div className="  bg-light music" id = "category-inner">
                             <img
                                 src={music}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "music"/>
                         </div>
                         <p className='mt-2 text-center'>MUSIC</p>
@@ -279,7 +278,7 @@ const Categories = () => {
                         <div className="  bg-light oral_care" id = "category-inner">
                             <img
                                 src={oral_care}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "oral_care"/>
                         </div>
                         <p className='mt-2 text-center'>ORAL CARE</p>
@@ -292,7 +291,7 @@ const Categories = () => {
                         <div className="  bg-light pets" id = "category-inner">
                             <img
                                 src={pets}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "pets"/>
                         </div>
                         <p className='mt-2 text-center'>PETS</p>
@@ -305,7 +304,7 @@ const Categories = () => {
                         <div className="  bg-light sporting" id = "category-inner">
                             <img
                                 src={sporting}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "sporting"/>
                         </div>
                         <p className='mt-2 text-center'>SPORTING</p>
@@ -322,7 +321,7 @@ const Categories = () => {
                         <div className="  bg-light skin_care" id = "category-inner">
                             <img
                                 src={skincare}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "skin_care"/>
                         </div>
                         <p className='mt-2 text-center'>SKIN CARE</p>
@@ -335,7 +334,7 @@ const Categories = () => {
                         <div className="  bg-light vehicles" id = "category-inner">
                             <img
                                 src={vehicles}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "vehicles"/>
                         </div>
                         <p className='mt-2 text-center'>VEHICLES</p>
@@ -348,7 +347,7 @@ const Categories = () => {
                         <div className="  bg-light watches" id = "category-inner">
                             <img
                                 src={watches}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "watches"/>
                         </div>
                         <p className='mt-2 text-center'>WATCHES</p>
@@ -361,7 +360,7 @@ const Categories = () => {
                         <div className="  bg-light men_shoes" id = "category-inner">
                             <img
                                 src={isaca}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "isaca"/>
                         </div>
                         <p className='mt-2 text-center'>ISACA</p>
@@ -374,7 +373,7 @@ const Categories = () => {
                         <div className="  bg-light others" id = "category-inner">
                             <img
                                 src={others}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "others"/>
                         </div>
                         <p className='mt-2 text-center'>OTHERS</p>
@@ -391,7 +390,7 @@ const Categories = () => {
                         <div className="  bg-light women_fashion" id = "category-inner">
                             <img
                                 src={women_fashion}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "women_fashion"/>
                         </div>
                         <p className='mt-2 text-center'>WOMEN FASHION</p>
@@ -404,7 +403,7 @@ const Categories = () => {
                         <div className="  bg-light women_shoes" id = "category-inner">
                             <img
                                 src={women_shoes}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "women_shoes"/>
                         </div>
                         <p className='mt-2 text-center'>WOMEN SHOES</p>
@@ -417,7 +416,7 @@ const Categories = () => {
                         <div className="  bg-light others" id = "category-inner">
                             <img
                                 src={others}
-                                style={{height: "100%", width: "100%"}}
+                                 
                                 alt= "others"/>
                         </div>
                         <p className='mt-2 text-center'>OTHERS</p>

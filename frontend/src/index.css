@@ -8,7 +8,11 @@ body {
 .site-container {
   min-height: 100vh;
 }
-
+#carousel-logo{
+  height: 100px;
+  width: 100px;
+  display: none;
+}
 main {
   flex: 1;
 }
@@ -461,7 +465,8 @@ product-details-tab {
 }
 #main-banner{
   background-image: url(./assets/hero-6.png);
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 #about-row{
@@ -475,12 +480,15 @@ product-details-tab {
   width: 300px;
   border: 10px solid black;
   border-radius: 50%;
+  margin-left: 40px;
 }
 .team-main{
-  margin-top: 50px;;
+  margin-top: 50px;
+  margin-left: 40px;
 }
 .testimonials-section{
   background-image: url(../src/assets/test_bg.png);
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height:600px;
@@ -499,4 +507,1021 @@ product-details-tab {
 }
 .testimonials-carousel{
   margin-top: 80px;
+}
+.main-footer{
+  margin-top: 30px;
+  padding-top: 20px;
+  background-color: #000000;
+  font-weight: 100;
+}
+#footer-div{
+  margin-top: 30px;
+}
+#footer-inner{
+  margin-top: 40px;
+
+}
+#border-text{
+  margin-top: 20px;
+}
+#newsletter-box{
+  width: 100%;
+}
+.newsletter-main i{
+  position: relative;
+  right: -50px;
+  bottom: 30px;
+}
+.footer-top-box {
+  margin-bottom: 30px;
+}
+
+.footer-top-box h3 {
+  color: #ffffff;
+  position: relative;
+  font-size: 20px;
+}
+
+.footer-top-box h3::before {
+  border-bottom: 2px solid #0d6efd;
+  content: "";
+  height: 3px;
+  width: 50%;
+  position: absolute;
+  bottom: 3px;
+  left: 0px;
+}
+
+.list-time {
+  margin-top: 15px;
+}
+
+.footer-top-box .list-time li {
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  float: none;
+}
+ .footer-top-box p {
+   padding-bottom: 15px;
+   color: #cccccc;
+ }
+
+ .footer-top-box ul {
+   display: inline-block;
+ }
+
+ .footer-top-box ul li {
+   float: left;
+   margin-right: 5px;
+   list-style-type: none;
+ }
+
+ .footer-top-box ul li a {
+   color: #ffffff;
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+   border: 2px solid #ffffff;
+   text-align: center;
+   line-height: 32px;
+ }
+
+ .footer-top-box ul li a:hover {
+   color: #0d6efd;
+   border-color: #0d6efd;
+ }
+ .footer-top-box ul{
+  padding-left: 0px;
+ }
+ #footer-lower p{
+  font-size: 13px;
+  font-weight: 300;
+ }
+ #border-text li{
+  /* list-style-type: none; */
+ }
+ #border-text ul{
+  padding-left: 0px;
+ }
+    .footer-link-contact h4 {
+      color: #ffffff;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      position: relative;
+      font-weight: 700;
+    }
+  
+    .footer-link-contact h4::before {
+      border-bottom: 3px solid #0d6efd;
+      content: "";
+      height: 3px;
+      width: 100%;
+      bottom: 3px;
+      left: 0px;
+    }
+  
+    .footer-link-contact ul li {
+      margin-bottom: 12px;
+    }
+  
+    .footer-link-contact ul li i {
+      left: 0;
+      top: 5px;
+    }
+  
+    .footer-link-contact ul li p {
+      color: #cccccc;
+    }
+  
+    .footer-link-contact ul li p {
+      font-size: 16px;
+      color: #cccccc;
+      font-weight: 300;
+    }
+    .footer-link-contact ul li p a:hover {
+      color: #0d6efd;
+    }
+#footer-contact{
+  width: 100%;
+}
+#carousel-image{
+  height: 800px
+}
+#carousel-button {
+  height: 70px;
+  width: 270px
+}
+#category-header {
+  margin-top: 90px;
+}
+ #category-main img {
+  height: 100%;
+  width: 100%;
+ }
+ @media screen and (max-width: 360px) {
+  .featurette-divider{
+    margin-top: 150px;
+  }
+  #main-container{
+    width: 390px;
+  }
+   #root {
+     width: 100%;
+   }
+
+   #search-bar {
+     width: 350px;
+   }
+    #carousel-logo {
+      height: 100px;
+      width: 100px;
+      display: block;
+      position: relative;
+      margin-bottom: 85px;
+      right: 55px;
+    }
+
+    #mail-logo {
+      display: none;
+    }
+   #carousel-image {
+     height: 500px
+   }
+
+   #carousel-caption {
+     margin-bottom: 50px;
+   }
+
+   #carousel-caption h1 {
+     font-size: 30px;
+   }
+
+   #carousel-caption h5 {
+     font-size: 18px;
+   }
+
+   #carousel-caption p {
+     display: none;
+   }
+
+   #carousel-button {
+     height: 60px;
+     width: 200px
+   }
+
+   #carousel-btn-caption {
+     font-size: 14px;
+   }
+
+   #about-caption {
+     position: relative;
+     bottom: 300px;
+   }
+
+   #about-text {
+     margin-top: 250px;
+   }
+
+   #about-img {
+     position: absolute;
+     height: 300px;
+   }
+   #about-pic{
+    width: 370px;
+   }
+
+   #about-p {
+     font-size: 14px;
+   }
+
+   #category-main img {
+     width: 85px;
+   }
+
+   #category-header {
+     margin-top: 40px;
+   }
+
+   #whyus-top {
+     display: inline-block;
+   }
+
+   .last-two {
+     display: none;
+   }
+
+   #blog-span {
+     display: none;
+   }
+
+   #testimonial-right {
+     position: absolute;
+   }
+
+   .testimonial-inner {
+     margin-left: 0px;
+   }
+
+   .testimonial-inner h2 {
+     text-align-last: center;
+   }
+
+   .testimonial-inner p {
+     text-align: center;
+   }
+
+   .test-p {
+     position: relative;
+     bottom: 0px;
+     font-size: 9px;
+     text-align: center;
+   }
+
+   .test-name {
+     position: absolute;
+     right: 80px;
+   }
+
+   .test-country {
+     position: absolute;
+     bottom: 30px;
+     right: 65px
+   }
+
+   .carousel-indicators {
+     right: -30px
+   }
+
+   #footer-inner {
+     display: block;
+   }
+
+   #social-media {
+     margin-top: 25px;
+   }
+
+   #footer-lower {
+     display: inline-block;
+   }
+  .featurette-divider {
+    margin-top: 150px;
+  }
+
+  .team-main {
+    display: grid;
+    margin-left: 0px;
+  }
+ }
+ @media screen and (max-width: 375px) {
+  #about-img {
+      position: absolute;
+      height: 300px;
+    }
+  #about-pic{
+    width: 360px;
+  }
+  .featurette-divider {
+    display: none;
+  }
+  .team-main {
+    display: grid;
+    margin-left: 10px;
+  }
+  .about-screen-header{
+    margin-top: 300px;
+  }
+ }
+@media screen and (max-width: 390px) {
+ #root{
+  width: 100%;
+ }
+ #search-bar{
+  width: 350px;
+ }
+  #carousel-logo {
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: relative;
+    margin-bottom: 90px;
+    right: 55px;
+  }
+
+  #mail-logo {
+    display: none;
+  }
+ #carousel-image{
+  height: 450px
+ }
+ #carousel-caption{
+  margin-bottom: 50px;
+ }
+ #carousel-caption h1{
+  font-size: 30px;
+ }
+ #carousel-caption h5{
+  font-size: 18px;
+ }
+ #carousel-caption p{
+  display: none;
+ }
+ #carousel-button{
+  height: 60px;
+  width: 200px
+ }
+ #carousel-btn-caption{
+  font-size: 14px;
+ }
+ #about-caption{
+  position: relative;
+    bottom: 250px;
+ }
+ #about-text{
+  margin-top: 200px;
+ }
+ #about-img{
+  position: absolute;
+ }
+ #about-p{
+  font-size: 14px;
+ }
+ #category-main img{
+  width: 75px;
+ }
+ #category-header{
+  margin-top: 40px;
+ }
+ #whyus-top{
+  display: inline-block;
+ }
+ .last-two{
+  display: none;
+ }
+ #blog-span{
+  display: none;
+ }
+ #testimonial-right{
+  position: absolute;
+ }
+ .testimonial-inner{
+  margin-left: 0px;
+ }
+ .testimonial-inner h2{
+  text-align-last: center;
+ }
+ .testimonial-inner p{
+  text-align: center;
+ }
+ .test-p{
+    position: relative;
+    bottom: 0px;
+    font-size: 9px;
+    text-align: center;
+ }
+ .test-name{
+  position: absolute;
+  right: 80px;
+ }
+ .test-country{
+  position: absolute;
+  bottom: 30px;
+  right: 65px
+ }
+ .carousel-indicators{
+  right: -30px
+ }
+ #footer-inner{
+  display: block;
+ }
+ #social-media{
+  margin-top: 25px;
+ }
+ #footer-lower{
+  display: inline-block;
+ }
+ .featurette-divider {
+   margin-top: 150px;
+ }
+  .team-main {
+    display: grid;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #root {
+    width: 100%;
+  }
+
+  #search-bar {
+    width: 350px;
+  }
+  #carousel-logo {
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: relative;
+    margin-bottom: 90px;
+    right: 55px;
+  }
+  #mail-logo{
+    display: none;
+  }
+  #carousel-image {
+    height: 500px
+  }
+
+  #carousel-caption {
+    margin-bottom: 50px;
+  }
+
+  #carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  #carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  #carousel-caption p {
+    display: none;
+  }
+
+  #carousel-button {
+    height: 60px;
+    width: 200px
+  }
+
+  #carousel-btn-caption {
+    font-size: 14px;
+  }
+
+  #about-caption {
+    position: relative;
+    bottom: 300px;
+  }
+
+  #about-text {
+    margin-top: 250px;
+  }
+
+  #about-img {
+    position: absolute;
+    height: 300px;
+  }
+
+  #about-p {
+    font-size: 14px;
+  }
+
+  #category-main img {
+    width: 85px;
+  }
+
+  #category-header {
+    margin-top: 40px;
+  }
+
+  #whyus-top {
+    display: inline-block;
+  }
+
+  .last-two {
+    display: none;
+  }
+
+  #blog-span {
+    display: none;
+  }
+
+  #testimonial-right {
+    position: absolute;
+  }
+
+  .testimonial-inner {
+    margin-left: 0px;
+  }
+
+  .testimonial-inner h2 {
+    text-align-last: center;
+  }
+
+  .testimonial-inner p {
+    text-align: center;
+  }
+
+  .test-p {
+    position: relative;
+    bottom: 0px;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .test-name {
+    position: absolute;
+    right: 80px;
+  }
+
+  .test-country {
+    position: absolute;
+    bottom: 30px;
+    right: 65px
+  }
+
+  .carousel-indicators {
+    right: -30px
+  }
+
+  #footer-inner {
+    display: block;
+  }
+
+  #social-media {
+    margin-top: 25px;
+  }
+
+  #footer-lower {
+    display: inline-block;
+  }
+  .featurette-divider {
+    margin-top: 150px;
+  
+  }
+  .team-main{
+    display: grid;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #root {
+    width: 100%;
+  }
+
+  #search-bar {
+    width: 350px;
+  }
+  #carousel-logo {
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: relative;
+    margin-bottom: 90px;
+    right: 55px;
+  }
+
+  #mail-logo {
+    display: none;
+  }
+  #carousel-image {
+    height: 500px
+  }
+
+  #carousel-caption {
+    margin-bottom: 50px;
+  }
+
+  #carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  #carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  #carousel-caption p {
+    display: none;
+  }
+
+  #carousel-button {
+    height: 60px;
+    width: 200px
+  }
+
+  #carousel-btn-caption {
+    font-size: 14px;
+  }
+
+  #about-caption {
+    position: relative;
+    bottom: 300px;
+  }
+
+  #about-text {
+    margin-top: 250px;
+  }
+
+  #about-img {
+    position: absolute;
+    height: 300px;
+  }
+
+  #about-p {
+    font-size: 14px;
+  }
+
+  #category-main img {
+    width: 85px;
+  }
+
+  #category-header {
+    margin-top: 40px;
+  }
+
+  #whyus-top {
+    display: inline-block;
+  }
+
+  .last-two {
+    display: none;
+  }
+
+  #blog-span {
+    display: none;
+  }
+
+  #testimonial-right {
+    position: absolute;
+  }
+
+  .testimonial-inner {
+    margin-left: 0px;
+  }
+
+  .testimonial-inner h2 {
+    text-align-last: center;
+  }
+
+  .testimonial-inner p {
+    text-align: center;
+  }
+
+  .test-p {
+    position: relative;
+    bottom: 0px;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .test-name {
+    position: absolute;
+    right: 80px;
+  }
+
+  .test-country {
+    position: absolute;
+    bottom: 30px;
+    right: 65px
+  }
+
+  .carousel-indicators {
+    right: -30px
+  }
+
+  #footer-inner {
+    display: block;
+  }
+
+  #social-media {
+    margin-top: 25px;
+  }
+
+  #footer-lower {
+    display: inline-block;
+  }
+  .featurette-divider {
+    margin-top: 150px;
+  }
+  .team-main {
+    display: grid;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 590px) {
+  #carousel-logo {
+  height: 100px;
+  width: 100px;
+  display: block;
+  position: relative;
+  margin-bottom: 285px;
+  right: 80px;
+  }
+
+  #mail-logo {
+    display: none;
+  }
+  #carousel-image {
+    height: 700px
+  }
+
+  #carousel-caption {
+    margin-bottom: 50px;
+  }
+
+  #carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  #carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  #carousel-caption p {
+    display: none;
+  }
+
+  #carousel-button {
+    height: 60px;
+    width: 200px
+  }
+
+  #carousel-btn-caption {
+    font-size: 14px;
+  }
+
+  #about-caption {
+    position: relative;
+    bottom: 380px;
+  }
+
+  #about-text {
+    margin-top: 320px;
+  }
+
+  #about-img {
+    position: absolute;
+    height: 350px;
+  }
+
+  #about-p {
+    font-size: 14px;
+  }
+
+  #category-main img {
+    width: 125px;
+  }
+
+  #category-header {
+    margin-top: 40px;
+  }
+
+  #whyus-top {
+    /* display: inline-block; */
+  }
+
+  .last-two {
+    /* display: none; */
+  }
+
+  #blog-span {
+    display: none;
+  }
+
+  #testimonial-right {
+    position: absolute;
+  }
+
+  .testimonial-inner {
+    margin-left: 0px;
+  }
+
+  .testimonial-inner h2 {
+    text-align-last: center;
+  }
+
+  .testimonial-inner p {
+    text-align: center;
+  }
+
+  .test-p {
+    position: relative;
+    bottom: 0px;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .test-name {
+    position: absolute;
+    right: 80px;
+  }
+
+  .test-country {
+    position: absolute;
+    bottom: 30px;
+    right: 50px
+  }
+
+  .carousel-indicators {
+    right: -30px
+  }
+
+  #footer-inner {
+    display: block;
+  }
+
+  #social-media {
+    margin-top: 25px;
+  }
+
+  #footer-lower {
+    display: inline-block;
+  }
+
+  .featurette-divider {
+    margin-top: 150px;
+  }
+
+  .team-main {
+    display: grid;
+    margin-left: 0px;
+  }
+  #team-title {
+    margin-right: -140px;
+  }
+}
+@media screen and (max-width: 645px) {
+  #carousel-logo {
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: relative;
+    margin-bottom: 285px;
+    right: 80px;
+  }
+
+  #mail-logo {
+    display: none;
+  }
+
+  #carousel-image {
+    height: 700px
+  }
+
+  #carousel-caption {
+    margin-bottom: 50px;
+  }
+
+  #carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  #carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  #carousel-caption p {
+    display: none;
+  }
+
+  #carousel-button {
+    height: 60px;
+    width: 200px
+  }
+
+  #carousel-btn-caption {
+    font-size: 14px;
+  }
+
+  #about-caption {
+    position: relative;
+    bottom: 380px;
+  }
+
+  #about-text {
+    margin-top: 320px;
+  }
+
+  #about-img {
+    position: absolute;
+    height: 350px;
+  }
+
+  #about-p {
+    font-size: 14px;
+  }
+
+  #category-main img {
+    width: 135px;
+  }
+
+  #category-header {
+    margin-top: 40px;
+  }
+
+  #whyus-top {
+    /* display: inline-block; */
+  }
+
+  .last-two {
+    /* display: none; */
+  }
+
+  #blog-span {
+    display: none;
+  }
+
+  #testimonial-right {
+    position: absolute;
+  }
+
+  .testimonial-inner {
+    margin-left: 0px;
+  }
+
+  .testimonial-inner h2 {
+    text-align-last: center;
+  }
+
+  .testimonial-inner p {
+    text-align: center;
+  }
+
+  .test-p {
+    position: relative;
+    bottom: 0px;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .test-name {
+    position: absolute;
+    right: 80px;
+  }
+
+  .test-country {
+    position: absolute;
+    bottom: 30px;
+    right: 50px
+  }
+
+  .carousel-indicators {
+    right: -30px
+  }
+
+  #footer-inner {
+    display: block;
+  }
+
+  #social-media {
+    margin-top: 25px;
+  }
+
+  #footer-lower {
+    display: inline-block;
+  }
+
+  .featurette-divider {
+    margin-top: 150px;
+  }
+
+  .team-main {
+    display: grid;
+    margin-left: 80px;
+  }
+  #team-title{
+    margin-right: 160px;
+  }
 }
