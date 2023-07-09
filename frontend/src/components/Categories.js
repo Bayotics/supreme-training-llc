@@ -16,7 +16,7 @@ import redhat from '../assets/redhat.png';
 import citrix from '../assets/citrix.jpg';
 import security from '../assets/security.jpg';
 import devops from '../assets/devops.jpg';
-import pmp from '../assets/pmp.png';
+import pmp from '../assets/pmp.jpg';
 import isc from '../assets/isc.jpg';
 import isaca from '../assets/isaca.jpg';
 import music from '../assets/music.jpg';
@@ -33,8 +33,8 @@ const Categories = () => {
     return(
         <div className='mt-4' id = "category-main">
         <h1 id = "category-header" className='text-center'><span className='theme-color'>TOP </span>CATEGORIES</h1>
-        <Carousel variant='dark'>
-            <Carousel.Item interval={1000}>
+        <Carousel variant='dark' id = "carousel">
+            <Carousel.Item className='category-car-inner' interval={1000}>
             <div className='row'>
                 <div className="col-3" id = "phones-and-tab">
                     <Link to={'/search?category=aws'} className = 'nav-link text-dark'>
@@ -118,19 +118,6 @@ const Categories = () => {
                 </Link>
             </div>
             <div className="col-3">
-                <Link className = 'nav-link text-dark' to={'/search?category=alibaba'}>
-                    <div  id = "category-item">
-                        <div className="  bg-light alibaba" id = "category-inner">
-                            <img
-                                src={alibaba}
-                                 
-                                alt= "alibaba"/>
-                        </div>
-                        <p className='mt-2 text-center'>ALIBABA CLOUD</p>
-                    </div>
-                </Link>
-            </div>
-            <div className="col-3">
                 <Link className = 'nav-link text-dark' to={'/search?category=vmware'}>
                     <div  id = "category-item">
                         <div className="  bg-light vmware" id = "category-inner">
@@ -140,6 +127,19 @@ const Categories = () => {
                                 alt= "vmware"/>
                         </div>
                         <p className='mt-2 text-center'>VMWARE</p>
+                    </div>
+                </Link>
+            </div>
+            <div className="col-3">
+                <Link className = 'nav-link text-dark' to={'/search?category=alibaba'}>
+                    <div  id = "category-item">
+                        <div className="  bg-light alibaba" id = "category-inner">
+                            <img
+                                src={alibaba}
+                                 
+                                alt= "alibaba"/>
+                        </div>
+                        <p className='mt-2 text-center'>ALIBABA CLOUD</p>
                     </div>
                 </Link>
             </div>
@@ -161,15 +161,15 @@ const Categories = () => {
                 </Link>
             </div>
             <div className="col-3">
-                <Link className = 'nav-link text-dark' to={'/search?category=salesforce'}>
+                <Link className = 'nav-link text-dark' to={'/search?category=pmp'}>
                     <div  id = "category-item">
-                        <div className="  bg-light salesforce" id = "category-inner">
+                        <div className="  bg-light pmp" id = "category-inner">
                             <img
-                                src={salesforce}
+                                src={pmp}
                                  
-                                alt= "salesforce"/>
+                                alt= "pmp"/>
                         </div>
-                        <p className='mt-2 text-center'>SALESFORCE</p>
+                        <p className='mt-2 text-center'>PMP</p>
                     </div>
                 </Link>
             </div>
@@ -243,15 +243,15 @@ const Categories = () => {
                 </Link>
             </div>
             <div className="col-3">
-                <Link className = 'nav-link text-dark' to={'/search?category=pmp'}>
+                <Link className = 'nav-link text-dark' to={'/search?category=salesforce'}>
                     <div  id = "category-item">
-                        <div className="  bg-light pmp" id = "category-inner">
+                        <div className="  bg-light salesforce" id = "category-inner">
                             <img
-                                src={pmp}
+                                src={salesforce}
                                  
-                                alt= "pmp"/>
+                                alt= "salesforce"/>
                         </div>
-                        <p className='mt-2 text-center'>PMP</p>
+                        <p className='mt-2 text-center'>SALESFORCE</p>
                     </div>
                 </Link>
             </div>

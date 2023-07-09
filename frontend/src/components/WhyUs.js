@@ -11,7 +11,7 @@ import award from '../assets/si6.png';
 const WhyUs = () => {
     return(
     <div className = "">
-        <h1 id = "" style={{marginTop: "60px"}} className='text-center'>
+        <h1 id = "whyus-header" style={{marginTop: "60px"}} className='text-center'>
             <span className='theme-color'>WHY </span>US?
         </h1>
         <p className="display-7 text-normal text-center text-muted">Fastest certifications with the best rates</p>
