@@ -453,6 +453,10 @@ product-details-tab {
 .nav-link{
   cursor: pointer;
 }
+.whyus-caption{
+  height: 100px;
+  width: 190px;
+}
 #carousel-caption{
   margin-bottom: 300px;
 }
@@ -661,296 +665,636 @@ product-details-tab {
   height: 100%;
   width: 100%;
  }
+ /* samsung s8 plus */
  @media screen and (min-width: 360px) and (max-width: 370px) {
-  .featurette-divider{
-    margin-top: 150px;
+#root {
+    width: 100%;
   }
-  #main-container{
-    width: 390px;
+  .whyus-caption {
+    width: 150px;
   }
-   #root {
-     width: 100%;
-   }
-
-   #search-bar {
-     width: 350px;
-   }
-    #carousel-logo {
-      height: 100px;
-      width: 100px;
-      display: block;
-      position: relative;
-      margin-bottom: 85px;
-      right: 55px;
-    }
-
-    #mail-logo {
-      display: none;
-    }
-   #carousel-image {
-     height: 500px
-   }
-
-   #carousel-caption {
-     margin-bottom: 50px;
-   }
-
-   #carousel-caption h1 {
-     font-size: 30px;
-   }
-
-   #carousel-caption h5 {
-     font-size: 18px;
-   }
-
-   #carousel-caption p {
-     display: none;
-   }
-
-   #carousel-button {
-     height: 60px;
-     width: 200px
-   }
-
-   #carousel-btn-caption {
-     font-size: 14px;
-   }
-
-   #about-caption {
-     position: relative;
-     bottom: 300px;
-   }
-
-   #about-text {
-     margin-top: 250px;
-   }
-
-   #about-img {
-     position: absolute;
-     height: 300px;
-   }
-   #about-pic{
-    width: 370px;
-   }
-
-   #about-p {
-     font-size: 14px;
-   }
-
-   #category-main img {
-     width: 85px;
-   }
-
-   #category-header {
-     margin-top: 40px;
-   }
-
-   #whyus-top {
-     display: inline-block;
-   }
-
-   .last-two {
-     display: none;
-   }
-
-   #blog-span {
-     display: none;
-   }
-
-   #testimonial-right {
-     position: absolute;
-   }
-
-   .testimonial-inner {
-     margin-left: 0px;
-   }
-
-   .testimonial-inner h2 {
-     text-align-last: center;
-   }
-
-   .testimonial-inner p {
-     text-align: center;
-   }
-
-   .test-p {
-     position: relative;
-     bottom: 0px;
-     font-size: 9px;
-     text-align: center;
-   }
-
-   .test-name {
-     position: absolute;
-     right: 80px;
-   }
-
-   .test-country {
-     position: absolute;
-     bottom: 30px;
-     right: 65px
-   }
-
-   .carousel-indicators {
-     right: -30px
-   }
-
-   #footer-inner {
-     display: block;
-   }
-
-   #social-media {
-     margin-top: 25px;
-   }
-
-   #footer-lower {
-     display: inline-block;
-   }
-  .featurette-divider {
-    margin-top: 150px;
+  #search-bar {
+    width: 320px;
   }
 
-  .team-main {
-    display: grid;
-    margin-left: 0px;
+  #carousel {
+    height: 200px;
   }
- }
- @media screen and (min-width: 375px) and (max-width: 385px){
-  #about-img {
-      position: absolute;
-      height: 300px;
-    }
-  #about-pic{
-    width: 360px;
-  }
-  .featurette-divider {
+
+  .carousel-inner {}
+
+  .carousel-control-next {
     display: none;
   }
-  .team-main {
-    display: grid;
-    margin-left: 10px;
+
+  .carousel-control-prev {
+    display: none;
   }
-  .about-screen-header{
-    margin-top: 300px;
-  }
- }
-@media screen and (min-width: 390px) and (max-width: 395px){
- #root{
-  width: 100%;
- }
- #search-bar{
-  width: 350px;
- }
+
   #carousel-logo {
     height: 100px;
     width: 100px;
     display: block;
-    position: relative;
-    margin-bottom: 90px;
-    right: 55px;
+    position: absolute;
+    top: -110px;
+    left: -50px;
   }
 
   #mail-logo {
     display: none;
   }
- #carousel-image{
-  height: 450px
- }
- #carousel-caption{
-  margin-bottom: 50px;
- }
- #carousel-caption h1{
-  font-size: 30px;
- }
- #carousel-caption h5{
-  font-size: 18px;
- }
- #carousel-caption p{
-  display: none;
- }
- #carousel-button{
-  height: 60px;
-  width: 200px
- }
- #carousel-btn-caption{
-  font-size: 14px;
- }
- #about-caption{
-  position: relative;
-    bottom: 250px;
- }
- #about-text{
-  margin-top: 200px;
- }
- #about-img{
-  position: absolute;
- }
- #about-p{
-  font-size: 14px;
- }
- #category-main img{
-  width: 75px;
- }
- #category-header{
-  margin-top: 40px;
- }
- #whyus-top{
-  display: inline-block;
- }
- .last-two{
-  display: none;
- }
- #blog-span{
-  display: none;
- }
- #testimonial-right{
-  position: absolute;
- }
- .testimonial-inner{
-  margin-left: 0px;
- }
- .testimonial-inner h2{
-  text-align-last: center;
- }
- .testimonial-inner p{
-  text-align: center;
- }
- .test-p{
+
+  #carousel-image {
+    height: 450px
+  }
+
+  #carousel-caption {
+    margin-bottom: -90px;
+  }
+
+  #carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  #carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  #carousel-caption p {
+    display: none;
+  }
+
+  #carousel-button {
+    height: 60px;
+    width: 200px;
+    margin-bottom: 150px;
+  }
+
+  #carousel-btn-caption {
+    font-size: 14px;
+  }
+
+  #about-caption {
+    position: relative;
+    bottom: 300px;
+  }
+
+  #about-text {
+    margin-top: 250px;
+  }
+
+  #about-img {
+    position: absolute;
+    height: 300px;
+  }
+
+  #about-p {
+    font-size: 14px;
+  }
+
+  #category-main {
+    height: 160px;
+    margin-bottom: 120px;
+  }
+
+  #category-inner {
+    height: 100px;
+  }
+
+  #category-main img {
+    width: 75px;
+    height: 100px;
+  }
+
+  #category-main p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #category-header {
+    margin-top: 40px;
+  }
+
+  #whyus-top {
+    display: inline-block;
+    word-break: break-all;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #whyus-top h5 {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  #whyus-top p {
+    font-size: 10;
+    text-wrap: balance;
+  }
+
+  #marketable-span {
+    display: none;
+  }
+
+  .last-two {
+    display: none;
+  }
+
+  #blog-span {
+    display: none;
+  }
+
+  #testimonial-right {
+    position: absolute;
+  }
+
+  .testimonial-inner {
+    margin-left: 0px;
+  }
+
+  .testimonial-inner h2 {
+    text-align-last: center;
+  }
+
+  .testimonial-inner p {
+    text-align: center;
+  }
+
+  .test-p {
     position: relative;
     bottom: 0px;
     font-size: 9px;
     text-align: center;
- }
- .test-name{
-  position: absolute;
-  right: 80px;
- }
- .test-country{
-  position: absolute;
-  bottom: 30px;
-  right: 65px
- }
- .carousel-indicators{
-  right: -30px
- }
- #footer-inner{
-  display: block;
- }
- #social-media{
-  margin-top: 25px;
- }
- #footer-lower{
-  display: inline-block;
- }
- .featurette-divider {
-   margin-top: 150px;
- }
+  }
+
+  .test-name {
+    position: absolute;
+    right: 80px;
+  }
+
+  .test-country {
+    position: absolute;
+    bottom: 30px;
+    right: 65px
+  }
+
+  .carousel-indicators {
+    right: -30px
+  }
+
+  #footer-inner {
+    display: block;
+  }
+
+  #social-media {
+    margin-top: 25px;
+  }
+
+  #footer-lower {
+    display: inline-block;
+  }
+
+  .featurette-divider {
+    margin-top: 150px;
+
+  }
+
+  #about-row {
+    display: block;
+  }
+
   .team-main {
     display: grid;
+    justify-content: center;
     margin-left: 0px;
+    margin-right: 40px;
+  }
+
+  #team-title {
+    margin-left: 50px;
+  }
+}
+ /* iPhone SE */
+ @media screen and (min-width: 374.5px) and (max-width: 390px){
+#root {
+    width: 100%;
+  }
+
+  #search-bar {
+    width: 350px;
+  }
+
+  #carousel {
+    height: 200px;
+  }
+
+  .carousel-inner {}
+
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  #carousel-logo {
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: -110px;
+    left: -50px;
+  }
+
+  #mail-logo {
+    display: none;
+  }
+
+  #carousel-image {
+    height: 450px
+  }
+
+  #carousel-caption {
+    margin-bottom: -90px;
+  }
+
+  #carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  #carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  #carousel-caption p {
+    display: none;
+  }
+
+  #carousel-button {
+    height: 60px;
+    width: 200px;
+    margin-bottom: 150px;
+  }
+
+  #carousel-btn-caption {
+    font-size: 14px;
+  }
+
+  #about-caption {
+    position: relative;
+    bottom: 300px;
+  }
+
+  #about-text {
+    margin-top: 250px;
+  }
+
+  #about-img {
+    position: absolute;
+    height: 300px;
+  }
+
+  #about-p {
+    font-size: 14px;
+  }
+
+  #category-main {
+    height: 160px;
+    margin-bottom: 120px;
+  }
+
+  #category-inner {
+    height: 100px;
+  }
+
+  #category-main img {
+    width: 75px;
+    height: 100px;
+  }
+
+  #category-main p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #category-header {
+    margin-top: 40px;
+  }
+
+  #whyus-top {
+    display: inline-block;
+    word-break: break-all;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+  #whyus-top h5{
+    font-size: 14px;
+    text-align: left;
+  }
+  #whyus-top p{
+    font-size: 10;
+    text-wrap: balance;
+  }
+  #marketable-span{
+    display: none;
+  }
+
+  .last-two {
+    display: none;
+  }
+
+  #blog-span {
+    display: none;
+  }
+
+  #testimonial-right {
+    position: absolute;
+  }
+
+  .testimonial-inner {
+    margin-left: 0px;
+  }
+
+  .testimonial-inner h2 {
+    text-align-last: center;
+  }
+
+  .testimonial-inner p {
+    text-align: center;
+  }
+
+  .test-p {
+    position: relative;
+    bottom: 0px;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .test-name {
+    position: absolute;
+    right: 80px;
+  }
+
+  .test-country {
+    position: absolute;
+    bottom: 30px;
+    right: 65px
+  }
+
+  .carousel-indicators {
+    right: -30px
+  }
+
+  #footer-inner {
+    display: block;
+  }
+
+  #social-media {
+    margin-top: 25px;
+  }
+
+  #footer-lower {
+    display: inline-block;
+  }
+
+  .featurette-divider {
+    margin-top: 150px;
+
+  }
+  #about-row{
+    display: block;
+  }
+
+  .team-main {
+    display: grid;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 40px;
+  }
+
+  #team-title {
+    margin-left: 50px;
   }
 }
 
+/* Pixel 5 */
+
+@media (min-width: 392.5px) and (max-width: 412px) {
+  .whyus-caption{
+    width: 170px;
+  }
+  #root {
+      width: 100%;
+    }
+  
+    #search-bar {
+      width: 350px;
+    }
+  
+    #carousel {
+      height: 200px;
+    }
+  
+    .carousel-inner {}
+  
+    .carousel-control-next {
+      display: none;
+    }
+  
+    .carousel-control-prev {
+      display: none;
+    }
+  
+    #carousel-logo {
+      height: 100px;
+      width: 100px;
+      display: block;
+      position: absolute;
+      top: -110px;
+      left: -50px;
+    }
+  
+    #mail-logo {
+      display: none;
+    }
+  
+    #carousel-image {
+      height: 450px
+    }
+  
+    #carousel-caption {
+      margin-bottom: -90px;
+    }
+  
+    #carousel-caption h1 {
+      font-size: 30px;
+    }
+  
+    #carousel-caption h5 {
+      font-size: 18px;
+    }
+  
+    #carousel-caption p {
+      display: none;
+    }
+  
+    #carousel-button {
+      height: 60px;
+      width: 200px;
+      margin-bottom: 150px;
+    }
+  
+    #carousel-btn-caption {
+      font-size: 14px;
+    }
+  
+    #about-caption {
+      position: relative;
+      bottom: 300px;
+    }
+  
+    #about-text {
+      margin-top: 250px;
+    }
+  
+    #about-img {
+      position: absolute;
+      height: 300px;
+    }
+  
+    #about-p {
+      font-size: 14px;
+    }
+  
+    #category-main {
+      height: 160px;
+      margin-bottom: 120px;
+    }
+  
+    #category-inner {
+      height: 100px;
+    }
+  
+    #category-main img {
+      width: 75px;
+      height: 100px;
+    }
+  
+    #category-main p {
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    #category-header {
+      margin-top: 40px;
+    }
+  
+    #whyus-top {
+      display: inline-block;
+      word-break: break-all;
+      margin: 0;
+      margin-left: 0;
+      padding: 0;
+    }
+  
+    #whyus-top h5 {
+      font-size: 14px;
+      text-align: left;
+    }
+  
+    #whyus-top p {
+      font-size: 10;
+      text-wrap: balance;
+    }
+  
+    #marketable-span {
+      display: none;
+    }
+  
+    .last-two {
+      display: none;
+    }
+  
+    #blog-span {
+      display: none;
+    }
+  
+    #testimonial-right {
+      position: absolute;
+    }
+  
+    .testimonial-inner {
+      margin-left: 0px;
+    }
+  
+    .testimonial-inner h2 {
+      text-align-last: center;
+    }
+  
+    .testimonial-inner p {
+      text-align: center;
+    }
+  
+    .test-p {
+      position: relative;
+      bottom: 0px;
+      font-size: 9px;
+      text-align: center;
+    }
+  
+    .test-name {
+      position: absolute;
+      right: 80px;
+    }
+  
+    .test-country {
+      position: absolute;
+      bottom: 30px;
+      right: 65px
+    }
+  
+    .carousel-indicators {
+      right: -30px
+    }
+  
+    #footer-inner {
+      display: block;
+    }
+  
+    #social-media {
+      margin-top: 25px;
+    }
+  
+    #footer-lower {
+      display: inline-block;
+    }
+  
+    .featurette-divider {
+      margin-top: 150px;
+  
+    }
+  
+    #about-row {
+      display: block;
+    }
+  
+    .team-main {
+      display: grid;
+      justify-content: center;
+      margin-left: 0px;
+      margin-right: 40px;
+    }
+  
+    #team-title {
+      margin-left: 50px;
+    }
+
+}
+
+/* iphone XR & iPhone 11 */
 @media (min-width: 413px) and (max-width: 420px) {
   body{
     /* background-color: tan; */
@@ -1119,7 +1463,7 @@ product-details-tab {
   }
   .team-main{
     display: grid;
-    margin-left: 0px;
+    margin-left: 10px;
   }
 }
 
@@ -1267,7 +1611,9 @@ product-details-tab {
     margin-left: 0px;
   }
 }
-@media screen and (min-width: 589.5px) and (max-width: 595px){
+
+/* iPhone 14 pro */
+@media screen and (min-width: 588.5px) and (max-width: 595px){
   /* #carousel-logo {
   height: 100px;
   width: 100px;
@@ -1277,146 +1623,229 @@ product-details-tab {
   right: 80px;
   } */
 
-  #mail-logo {
-    display: none;
-  }
-  #carousel-image {
-    height: 700px
-  }
+ #root {
+   width: 100%;
+ }
 
-  #carousel-caption {
-    margin-bottom: 50px;
-  }
+ #search-bar {
+   width: 500px;
+ }
 
-  #carousel-caption h1 {
-    font-size: 30px;
-  }
+ #carousel {
+   height: 200px;
+ }
 
-  #carousel-caption h5 {
-    font-size: 18px;
-  }
+ .carousel-inner {}
 
-  #carousel-caption p {
-    display: none;
-  }
+ .carousel-control-next {
+   display: none;
+ }
 
-  #carousel-button {
-    height: 60px;
-    width: 200px
-  }
+ .carousel-control-prev {
+   display: none;
+ }
 
-  #carousel-btn-caption {
-    font-size: 14px;
-  }
+ #carousel-logo {
+   height: 100px;
+   width: 100px;
+   display: block;
+   position: absolute;
+   top: -250px;
+   left: -60px;
+ }
 
-  #about-caption {
-    position: relative;
-    bottom: 380px;
-  }
+ #mail-logo {
+   display: none;
+ }
 
-  #about-text {
-    margin-top: 320px;
-  }
+ #carousel-image {
+   height: 550px
+ }
 
-  #about-img {
-    position: absolute;
-    height: 350px;
-  }
+ #carousel-caption {
+   margin-bottom: -90px;
+ }
 
-  #about-p {
-    font-size: 14px;
-  }
+ #carousel-caption h1 {
+   font-size: 30px;
+ }
 
-  #category-main img {
-    width: 125px;
-  }
+ #carousel-caption h5 {
+   font-size: 18px;
+ }
 
-  #category-header {
-    margin-top: 40px;
-  }
+ #carousel-caption p {
+   display: none;
+ }
 
-  #whyus-top {
-    /* display: inline-block; */
-  }
+ #carousel-button {
+   height: 60px;
+   width: 200px;
+   margin-bottom: 150px;
+ }
 
-  .last-two {
-    /* display: none; */
-  }
+ #carousel-btn-caption {
+   font-size: 14px;
+ }
 
-  #blog-span {
-    display: none;
-  }
+ #about-caption {
+   position: relative;
+   bottom: 380px;
+ }
 
-  #testimonial-right {
-    position: absolute;
-  }
+ #about-text {
+   margin-top: 330px;
+ }
 
-  .testimonial-inner {
-    margin-left: 0px;
-  }
+ #about-img {
+   position: absolute;
+   height: 360px;
+ }
 
-  .testimonial-inner h2 {
-    text-align-last: center;
-  }
+ #about-p {
+   font-size: 14px;
+ }
 
-  .testimonial-inner p {
-    text-align: center;
-  }
+ #category-main {
+   height: 160px;
+   margin-bottom: 120px;
+ }
 
-  .test-p {
-    position: relative;
-    bottom: 0px;
-    font-size: 9px;
-    text-align: center;
-  }
+ #category-inner {
+   height: 100px;
+ }
 
-  .test-name {
-    position: absolute;
-    right: 80px;
-  }
+ #category-main img {
+   width: 75px;
+   height: 100px;
+ }
 
-  .test-country {
-    position: absolute;
-    bottom: 30px;
-    right: 50px
-  }
+ #category-main p {
+   font-size: 12px;
+   text-align: center;
+ }
 
-  .carousel-indicators {
-    right: -30px
-  }
+ #category-header {
+   margin-top: 40px;
+ }
 
-  #footer-inner {
-    display: block;
-  }
+ #whyus-top {
+   display: inline-block;
+   margin-left: 40px;
+ }
+ .marketable{
+  margin-left: 100px;
+ }
 
-  #social-media {
-    margin-top: 25px;
-  }
+ .last-two {
+   display: none;
+ }
 
-  #footer-lower {
-    display: inline-block;
-  }
+ #blog-span {
+   display: none;
+ }
 
-  .featurette-divider {
-    margin-top: 150px;
-  }
+ #testimonial-right {
+   position: absolute;
+ }
 
-  .team-main {
-    display: grid;
-    margin-left: 0px;
-  }
-  #team-title {
-    margin-right: -140px;
-  }
+ .testimonial-inner {
+   margin-left: 0px;
+ }
+
+ .testimonial-inner h2 {
+   text-align-last: center;
+ }
+
+ .testimonial-inner p {
+   text-align: center;
+ }
+
+ .test-p {
+   position: relative;
+   bottom: 0px;
+   font-size: 9px;
+   text-align: center;
+ }
+
+ .test-name {
+   position: absolute;
+   right: 80px;
+ }
+
+ .test-country {
+   position: absolute;
+   bottom: 30px;
+   right: 65px
+ }
+
+ .carousel-indicators {
+   right: -30px
+ }
+
+ #footer-inner {
+   display: block;
+ }
+
+ #social-media {
+   margin-top: 25px;
+ }
+
+ #footer-lower {
+   display: inline-block;
+ }
+ .blog_feature_img{
+  /* height: 150px; */
+ }
+
+ .featurette-divider {
+   margin-top: 150px;
+
+ }
+
+ .team-main {
+   display: grid;
+   justify-content: center;
+   margin-left: 0px;
+   margin-right: 50px;
+ }
+
+ #team-title {
+   margin-left: 50px;
+ }
 }
-@media screen and (min-width: 645px) and (max-width: 650px){
+
+/* iPhone 14 pro max  */
+@media screen and (min-width: 645px) and (max-width: 700px){
+#root {
+    width: 100%;
+  }
+
+  #search-bar {
+    width: 500px;
+  }
+
+  #carousel {
+    height: 200px;
+  }
+
+  .carousel-inner {}
+
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
   #carousel-logo {
     height: 100px;
     width: 100px;
     display: block;
-    position: relative;
-    margin-bottom: 285px;
-    right: 80px;
+    position: absolute;
+    top: -250px;
+    left: -60px;
   }
 
   #mail-logo {
@@ -1424,11 +1853,11 @@ product-details-tab {
   }
 
   #carousel-image {
-    height: 700px
+    height: 550px
   }
 
   #carousel-caption {
-    margin-bottom: 50px;
+    margin-bottom: -90px;
   }
 
   #carousel-caption h1 {
@@ -1445,7 +1874,8 @@ product-details-tab {
 
   #carousel-button {
     height: 60px;
-    width: 200px
+    width: 200px;
+    margin-bottom: 150px;
   }
 
   #carousel-btn-caption {
@@ -1458,20 +1888,35 @@ product-details-tab {
   }
 
   #about-text {
-    margin-top: 320px;
+    margin-top: 330px;
   }
 
   #about-img {
     position: absolute;
-    height: 350px;
+    height: 360px;
   }
 
   #about-p {
     font-size: 14px;
   }
 
+  #category-main {
+    height: 160px;
+    margin-bottom: 120px;
+  }
+
+  #category-inner {
+    height: 100px;
+  }
+
   #category-main img {
-    width: 135px;
+    width: 75px;
+    height: 100px;
+  }
+
+  #category-main p {
+    font-size: 12px;
+    text-align: center;
   }
 
   #category-header {
@@ -1479,11 +1924,11 @@ product-details-tab {
   }
 
   #whyus-top {
-    /* display: inline-block; */
+    display: inline-block;
   }
 
   .last-two {
-    /* display: none; */
+    display: inline-block;
   }
 
   #blog-span {
@@ -1521,7 +1966,7 @@ product-details-tab {
   .test-country {
     position: absolute;
     bottom: 30px;
-    right: 50px
+    right: 65px
   }
 
   .carousel-indicators {
@@ -1542,13 +1987,16 @@ product-details-tab {
 
   .featurette-divider {
     margin-top: 150px;
+
   }
 
   .team-main {
     display: grid;
-    margin-left: 80px;
+   justify-content: center;
+   margin-left: 0px;
+   margin-right: 50px;
   }
   #team-title{
-    margin-right: 160px;
+    margin-left: 50px;
   }
 }

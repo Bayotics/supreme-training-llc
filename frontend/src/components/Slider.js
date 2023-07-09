@@ -61,7 +61,7 @@ function Slider() {
         <Carousel.Caption id = "carousel-caption">
           <img id='carousel-logo' src={logo} alt='logo'></img>
           <h1 className='display-2 text-bold'>SUPREME INFORMATION TRAINING </h1>
-          <h5 className='display-5'>Get certified from your home</h5>
+          <h5 className='display-5'>Get certified from home</h5>
           <p>10% OFF YOUR FIRST ORDER</p>
           <Link 
               to = "/search?category=all&query=all&price=all&rating=all&order=newest&page=1" >

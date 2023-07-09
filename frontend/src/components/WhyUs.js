@@ -20,7 +20,7 @@ const WhyUs = () => {
                 <div className=''>
                     <img src={fast} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Swift Services</h5>
-                    <div className='mt-4' style={{height: "100px", width: "190px"}}>
+                    <div className='mt-4 whyus-caption' >
                         <p style={{fontSize: '13px'}} className='text-left text-secondary'>Our trainings are concise and straight to the point. 
                         Get certified within few weeks of training</p>
                     </div>
@@ -28,8 +28,8 @@ const WhyUs = () => {
                 <div className=''>
                     <img src={secure} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Expert training team</h5>
-                    <div className='mt-4' style={{height: "100px", width: "190px"}}>
-                        <p style={{fontSize: '13px'}} className='text-left text-secondary'>
+                    <div className='mt-4 whyus-caption' >
+                        <p style={{fontSize: '12px'}} className='text-left text-secondary'>
                             Our highly skilled trainers will share their knowledge and guide you all through the training
                             process
                         </p>
@@ -38,7 +38,7 @@ const WhyUs = () => {
                 <div className='last-two'>
                     <img src={expert} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Secure Payments</h5>
-                    <div className='mt-4' style={{height: "100px", width: "190px"}}>
+                    <div className='mt-4  whyus-caption'  >
                         <p style={{fontSize: '13px'}} className='text-left text-secondary'>
                             Every payment on our platform is logged and transparent to you.
                             100% money back guaranteed incase of a failed payment
@@ -50,16 +50,16 @@ const WhyUs = () => {
                 <div className=''>
                     <img src={affordable} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Discounted Services</h5>
-                    <div className='mt-4' style={{height: "100px", width: "190px"}}>
+                    <div className='mt-4  whyus-caption'  >
                         <p style={{fontSize: '13px'}} className='text-left text-secondary'>
                             we offer training to highly productive courses at the best, pocket friendly rates 
                         </p>
                     </div>
                 </div>
-                <div>
+                <div className='marketable'>
                     <img src={warranty} style={{height: "100px", width: "100px"}} alt = "fast" />
-                    <h5 className='mt-4'>Highly Profitable Courses</h5>
-                    <div className='mt-4' style={{height: "100px", width: "190px"}}>
+                    <h5 className='mt-4'>Highly Marketable <span id = "marketable-span">Courses</span> </h5>
+                    <div className='mt-4  whyus-caption'  >
                         <p style={{fontSize: '13px'}} className='text-left text-secondary'>
                             we offer a wide range of training programs designed to enhance your IT capabilities and build your portfolio
                         </p>
@@ -68,7 +68,7 @@ const WhyUs = () => {
                 <div className='last-two'>
                     <img src={award} style={{height: "100px", width: "100px"}} alt = "fast" />
                     <h5 className='mt-4'>Award winning</h5>
-                    <div className='mt-4' style={{height: "100px", width: "190px"}}>
+                    <div className='mt-4  whyus-caption'  >
                         <p style={{fontSize: '13px'}} className='text-left text-secondary'>
                             we are a brand that has been recognized by top tech organisations on multiple occasions for our services. Our works speak for us 
                         </p>
