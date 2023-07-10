@@ -20,7 +20,7 @@ function Slider() {
         />
         <Carousel.Caption id = "carousel-caption">
           <img id='carousel-logo' src={logo} alt='logo'></img>
-          <h1 className='display-2 text-bold'>SUPREME INFORMATION TRAINING</h1>
+          <h1 className='display-2 text-bold'>SUPREME TRAINING</h1>
           <h5 className='display-5'>Highly skilled trainers</h5>
           <p>10% OFF YOUR FIRST ORDER</p>
             <Link 
@@ -40,7 +40,7 @@ function Slider() {
         />
         <Carousel.Caption id = "carousel-caption">
           <img id='carousel-logo' src={logo} alt='logo'></img>
-          <h1 className='display-2 text-bold'>SUPREME INFORMATION TRAINING</h1>
+          <h1 className='display-2 text-bold'>SUPREME TRAINING</h1>
           <h5 className='display-5'>Train at your own time</h5>
           <p>10% OFF YOUR FIRST ORDER</p>
           <Link 
@@ -60,7 +60,7 @@ function Slider() {
         />
         <Carousel.Caption id = "carousel-caption">
           <img id='carousel-logo' src={logo} alt='logo'></img>
-          <h1 className='display-2 text-bold'>SUPREME INFORMATION TRAINING </h1>
+          <h1 className='display-2 text-bold'>SUPREME TRAINING </h1>
           <h5 className='display-5'>Get certified from home</h5>
           <p>10% OFF YOUR FIRST ORDER</p>
           <Link 

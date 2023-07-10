@@ -78,10 +78,10 @@ const Footer = () => {
                     </div>
                      <div className="">
                         <div className="footer-link-contact mt-4">
-                            <p><i className="fas fa-map-marker-alt"></i>Address: .......,
+                            <p><i className="fas fa-map-marker-alt"></i> .......,
                             </p>
-                            <p><i className="fas fa-phone-square"></i>Phone: <Link to={"tel:+1-6319336332"}>+1 (631) 933-6332</Link></p>
-                            <p><i className="fas fa-envelope"></i>Email: <Link to = {"mailto:ashobal@sinfosecurity.com"}>ashobal@sinfosecurity.com</Link></p>
+                            <p><i className="fas fa-phone-square"></i><Link to={"tel:+1-6319336332"}>+1 (631) 933-6332</Link></p>
+                            <p><i className="fas fa-envelope"></i> <Link to = {"mailto:ashobal@sinfosecurity.com"}>ashobal@sinfosecurity.com</Link></p>
                         </div>
                     </div>
                 </Col>

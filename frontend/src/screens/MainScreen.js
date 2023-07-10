@@ -65,7 +65,7 @@ function HomeScreen() {
       <div className='' id = "main-products">
 
         <Helmet>
-          <title>Supreme information Training </title>
+          <title>Supreme Training </title>
         </Helmet>
         <div id = "about-div">
           <AboutUs />
