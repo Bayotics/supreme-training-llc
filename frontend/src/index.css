@@ -8,10 +8,12 @@ body {
 .site-container {
   min-height: 100vh;
 }
-#carousel-logo{
-  height: 100px;
-  width: 100px;
-  display: none;
+#main-hero{
+  width: 100%;
+  height: 800px;
+  background-image: url(../src/assets/bg-main-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main {
   flex: 1;

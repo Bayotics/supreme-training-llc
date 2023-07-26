@@ -8,6 +8,12 @@ import Categories from '../components/Categories';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import Slider from '../components/Slider';
+import AboutUs from '../components/AboutUs';
+import WhyUs from '../components/WhyUs';
+import Blog from '../components/Blog';
+import Testimonials from '../components/Testimonials';
+
 // import data from '../data';
 
 const reducer = (state, action) => {
@@ -53,18 +59,30 @@ function HomeScreen() {
   }, [page]);
   return (
     <div>
-      <div id="hero-background" className='w-100 border mb-4'>
-
+      <div id="hero-background" className='w-100 mb-4'>
+        <Slider />
       </div>
-      <div className='border' id = "main-products">
+      <div className='' id = "main-products">
 
         <Helmet>
-          <title>Supreme training </title>
+          <title>Supreme Training </title>
         </Helmet>
-        <div >
+        <div id = "about-div">
+          <AboutUs />
+        </div>
+        <div id = "categories-div">
           <Categories />
         </div>
-        <h1 className='text-center fw-normal'><span className='theme-color'>FEATURED </span> PRODUCTS</h1>
+        <div id = "whyus-div">
+          <WhyUs />
+        </div>
+        <div id = "blog-div">
+          <Blog />
+        </div>
+        <div id = "testimonials-div">
+          <Testimonials />
+        </div>
+        {/* <h1 className='text-center mt-4'><span className='theme-color'>FEATURED </span> PRODUCTS</h1>
         <div className="products" id = "featured-products">
           {loading ? (
             <LoadingBox />
@@ -92,7 +110,7 @@ function HomeScreen() {
               </div>
             </>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
 
