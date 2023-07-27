@@ -13,7 +13,7 @@ import AboutUs from '../components/AboutUs';
 import WhyUs from '../components/WhyUs';
 import Blog from '../components/Blog';
 import Testimonials from '../components/Testimonials';
-
+import Parallax from '../components/Parallax';
 // import data from '../data';
 
 const reducer = (state, action) => {
@@ -63,7 +63,6 @@ function HomeScreen() {
         <Slider />
       </div>
       <div className='' id = "main-products">
-
         <Helmet>
           <title>Supreme Training </title>
         </Helmet>
@@ -78,6 +77,9 @@ function HomeScreen() {
         </div>
         <div id = "blog-div">
           <Blog />
+        </div>
+        <div>
+          <Parallax />
         </div>
         <div id = "testimonials-div">
           <Testimonials />

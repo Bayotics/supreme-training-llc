@@ -8,16 +8,17 @@ const AboutUs = () => {
         <div>
             <Row>
                 <Col id = "about-text">
-                    <h2 id='about-caption'>About Us.</h2>
-                    <p id="about-p"className='lh-large text-secondary' style={{marginTop: "30px"}}>
-                       Welcome to Supreme training, a leading provider of comprehensive and cutting-edge IT training solutions. We are dedicated to empowering individuals and organizations with the knowledge and skills needed to thrive in today's dynamic technology landscape.
-                       At Supreme training, we understand that technology is evolving at an unprecedented pace, and staying ahead requires continuous learning and development. That's why we offer a wide range of training programs designed to meet the needs of beginners, experienced professionals, and organizations seeking to enhance their IT capabilities.
-                       Our team of experienced and certified instructors brings a wealth of industry knowledge and expertise to the training programs.
-                       They are passionate about sharing their knowledge and guiding students through practical exercises and real-world scenarios, ensuring that the concepts learned can be applied effectively in professional settings.
-                    </p>
+                    <div className='border' id = "about-text-box">
+                        <h1>Acquire the skills to accelerate and maintain a competitive edge in IT.</h1>
+                    </div>
+                    <div className='border about-bg-btn'>
+                        <button class="col btn btn-funky-moon btn-rounded about-btn"><p>Explore ➙</p></button>
+                    </div>
+                    
                 </Col>
                 <Col id = "about-img">
-                    <img id='about-pic' style={{height: '100%', width: '100%'}} src={about}  alt='about' />   
+                    
+                    <img id='about-pic' style={{height: '100%', width: '100%'}} src={about}  alt='about' /> 
                 </Col>
             </Row>
         </div>

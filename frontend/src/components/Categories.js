@@ -32,7 +32,7 @@ import women_shoes from '../assets/women_shoes.jpg';
 const Categories = () => {
     return(
         <div className='mt-4' id = "category-main">
-        <h1 id = "category-header" className='text-center'><span className='theme-color'>TOP </span>CATEGORIES</h1>
+        <h1 id = "category-header" className='text-center'><span className='theme-color'>POPULAR </span>COURSES</h1>
         <Carousel variant='dark' id = "carousel">
             <Carousel.Item className='category-car-inner' interval={1000}>
             <div className='row'>

@@ -89,7 +89,7 @@ function App() {
       >
         <ToastContainer position="bottom-center" limit={1} />
         <header className=''>
-          <Navbar bg="white" variant="white" expand="lg">
+          <Navbar variant="white" expand="lg">
             <Container id = "main-container">
                <Button
                 variant="white"
@@ -100,7 +100,7 @@ function App() {
               <LinkContainer to="/">
                 <Navbar.Brand id = "mail-logo">
                   <img src={logo} 
-                  style={{height: '50px', width: '50px'}}
+                  style={{height: '80px', width: '80px'}}
                   alt='logo' />
                 </Navbar.Brand>
               </LinkContainer>
@@ -110,17 +110,13 @@ function App() {
               <Navbar.Collapse id="basic-navbar-nav">
                   <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
-                      <Link to = "/" className='nav-link text-dark bold-text'>HOME</Link>
+                      {/* <Link to = "/" className='nav-link text-white bold-text'>COURSES</Link> */}
                       <Link 
                       to = "/search?category=all&query=all&price=all&rating=all&order=newest&page=1" 
-                      className='nav-link text-dark bold-text'>COURSES</Link>
-                      <Link to = "/aboutus" className='nav-link text-dark bold-text'>ABOUT</Link>
-                      <Link to = "/" className='nav-link text-dark bold-text' id = "contact-nav">CONTACT</Link>
-                  {/* <Link to = "/" 
-                  className='nav-link text-dark'
-                  >Dark mode
-                  <i className="fa fa-toggle-off" aria-hidden="true"></i></Link> */}
-                  <Link to="/cart" className="nav-link text-dark">
+                      className='nav-link text-white bold-text'>COURSES</Link>
+                      <Link to = "/aboutus" className='nav-link text-white bold-text'>CERTIFICATIONS</Link>
+                      <Link to = "/" className='nav-link text-white bold-text' id = "contact-nav">COMPANY</Link>
+                  <Link to="/cart" className="nav-link text-white">
                     <i className="fas fa-shopping-cart"></i>
                     {cart.cartItems.length > 0 && (
                       <Badge pill bg="danger">
@@ -141,7 +137,7 @@ function App() {
                       </LinkContainer>
                       <NavDropdown.Divider />
                       <Link
-                        className="dropdown-item text-dark"
+                        className="dropdown-item text-white"
                         to="#signout"
                         onClick={signoutHandler}
                       >
@@ -149,7 +145,7 @@ function App() {
                       </Link>
                     </NavDropdown>
                   ) : (
-                    <Link className="nav-link text-dark" to="/signin">
+                    <Link className="nav-link text-white" to="/signin">
                       Sign In
                     </Link>
                   )}
