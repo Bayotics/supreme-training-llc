@@ -70,7 +70,7 @@ function HomeScreen() {
           <AboutUs />
         </div>
         <div id = "categories-div">
-          <Categories />
+          <Parallax />
         </div>
         <div id = "whyus-div">
           <WhyUs />
@@ -79,7 +79,6 @@ function HomeScreen() {
           <Blog />
         </div>
         <div>
-          <Parallax />
         </div>
         <div id = "testimonials-div">
           <Testimonials />
