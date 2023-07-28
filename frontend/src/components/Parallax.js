@@ -5,10 +5,33 @@
 ************************************/
 
 import { useState, useEffect } from "react";
+import alibaba from '../assets/alibaba.png';
+import aws from '../assets/aws.png';
+import azure from '../assets/azure.png';
+import cisa from '../assets/cisa.png';
+import cisco from '../assets/cisco.png';
+import comptia from '../assets/comptia.png';
+import csm from '../assets/csm.png';
+import devops from '../assets/devops.png';
+import ibm from '../assets/ibm.png';
+import oracle from '../assets/oracle.png';
+import pmp from '../assets/pmp.png';
+import safe from '../assets/safe.png';
+
 
 const slideWidth = 30;
 
 const _items = [
+    {
+        player: {
+            title: 'Certified ScrumMaster',
+            description: 'Receive 30 hours of interactive live training from Scrum Alliance Certified Scrum Trainers (CSTs) and obtain 14 (PDUs) and (SEUs).',
+            image: '',
+
+            courseDuration: '30',
+            rating: '',
+        },
+    },
     {
         player: {
             title: 'Certified ScrumMaster',
@@ -26,30 +49,47 @@ const _items = [
     },
     {
         player: {
-            title: "Ronnie O'Sullivan",
-            desc: "Ronald Antonio O'Sullivan is a six-time world champion and is the most successful player in the history of snooker.",
-            image: 'https://i.postimg.cc/qBGQNc37/ro-slider.jpg',
+            title: 'Certified ScrumMaster',
+            carouselList: [
+                '30 hours of interactive live sessions with experienced instructors and experiential workshops.',
+                'Receive training from Scrum Alliance Certified Scrum Trainers (CSTs) and obtain 14 (PDUs) and (SEUs).'
+            ],
+            image: [
+                
+            ],
+
+            courseDuration: '30',
+            rating: '',
         },
     },
     {
         player: {
-            title: 'Shane Van Boening',
-            desc: 'The "South Dakota Kid" is hearing-impaired and uses a hearing aid, but it has not limited his ability.',
-            image: 'https://i.postimg.cc/cHdMJQKG/svb-slider.jpg',
+            title: 'Certified ScrumMaster',
+            carouselList: [
+                '30 hours of interactive live sessions with experienced instructors and experiential workshops.',
+                'Receive training from Scrum Alliance Certified Scrum Trainers (CSTs) and obtain 14 (PDUs) and (SEUs).'
+            ],
+            image: [
+                
+            ],
+
+            courseDuration: '30',
+            rating: '',
         },
     },
     {
         player: {
-            title: 'Mike Sigel',
-            desc: 'Mike Sigel or "Captain Hook" as many like to call him is an American professional pool player with over 108 tournament wins.',
-            image: 'https://i.postimg.cc/C12h7nZn/ms-1.jpg',
-        },
-    },
-    {
-        player: {
-            title: 'Willie Mosconi',
-            desc: 'Nicknamed "Mr. Pocket Billiards," Willie Mosconi was among the first Billiard Congress of America Hall of Fame inductees.',
-            image: 'https://i.postimg.cc/NfzMDVHP/willie-mosconi-slider.jpg',
+            title: 'Certified ScrumMaster',
+            carouselList: [
+                '30 hours of interactive live sessions with experienced instructors and experiential workshops.',
+                'Receive training from Scrum Alliance Certified Scrum Trainers (CSTs) and obtain 14 (PDUs) and (SEUs).'
+            ],
+            image: [
+                
+            ],
+
+            courseDuration: '30',
+            rating: '',
         },
     },
 ];
@@ -90,9 +130,21 @@ const CarouselSlideItem = ({pos, idx, activeIdx}) => {
     return (
         <li className="carousel__slide-item" style={item.styles}>
             <div className="border carousel__slide-item-img-link">
-                <div className="border">
-                    <div className="border carousel-header">
+                <div className="border" id="parallax-inner">
+                    <div className="mt-4 border parallax-logo">
+                        <img className="parallax-img" src={alibaba} alt = 'alibaba' />
+                    </div>
+                    <div className="parallax-button">
+                        <button className="btn mt-8">Trending <i class="fa fa-fire" aria-hidden="true"></i></button>
+                    </div>
+                    <div className="mt-4 border parallax-header">
                         <h4>Certified ScrumMaster</h4>
+                    </div>
+                    <div className="border mt-4 parallax-description">
+                        <p>Receive 30 hours of interactive live training from Scrum Alliance Certified Scrum Trainers (CSTs) and obtain 14 (PDUs) and (SEUs).</p>
+                    </div>
+                    <div className="parallax-learning-button">
+                        <button className="btn mt-8">Start Learning <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 {/* <img src={item.player.image} alt={item.player.title} /> */}
