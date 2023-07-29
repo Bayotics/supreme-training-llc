@@ -97,6 +97,11 @@ footer{
   line-height: 1.5;
   font-size: 40px;
 }
+.about-text-box-p{
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+}
 .about-bg-btn{
   width: 50%;
   margin: auto;
