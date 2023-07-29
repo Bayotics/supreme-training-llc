@@ -72,7 +72,7 @@ header{
 }
 #whyus-div{
   position: relative;
-  top: 700px
+  top: 1000px
 }
 #blog-div{
   position: relative;
@@ -88,8 +88,8 @@ footer{
 }
 #about-text-box{
   height: 50%;
-  width: 50%;
-  margin: auto;
+  width: 80%;
+  margin-left: 20px;
   margin-top: 50px;
 }
 #about-text-box h1{
@@ -102,10 +102,26 @@ footer{
   margin: auto;
   margin-top: 50px;
 }
+.start-learning-button{
+  width: 40%;
+}
+.parallax-button-trending{
+  height: 30px;
+  width: 30%;
+  text-align: center;
+  background: linear-gradient(to right, #e4e39b, #e0af0c);
+  border-radius: 15px;
 
-
+}
 /* slider */
+#parallax-div{
 
+  position: relative;
+  top: 880px;
+}
+.parallax-row{
+  height: 500px;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -138,7 +154,7 @@ a {
 
 
 
-.carousel__wrap {
+/* .carousel__wrap {
   margin-top: 10%;
   align-items: center;
   display: flex;
@@ -165,37 +181,40 @@ a {
 
 .carousel__slide-list {
   height: 100%;
-  left: 50%;
+  left: 59%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: absolute;
   transform: translateX(-50%);
   width: calc(330rem);
+} */
+#parallax-main{
+  height: 31rem;
 }
-
-.carousel__slide-item {
+#parallax-item{
   display: inline-block;
   height: 30rem;
-  margin: 0;
+  margin-left: 10px;
   padding: 1rem;
   position: absolute;
   transition: all 0.3s;
-  width: 26rem;
-  background-color: #fafaf7;
+  width: 24rem;
+  background-color: white;
   border-radius: 20px;
-  box-shadow: 
-  0 4px 8px 0 rgba(0, 0, 0, .2),
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, .2),
     0 6px 20px 0 rgba(0, 0, 0, .19);
 }
 
+
 .carousel__slide-item-img-link {
-  cursor: pointer;
+  /* cursor: pointer;
   display: flex;
   height: 100%;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 100%; */
 }
 
 .carousel__slide-item-img-link img {
@@ -282,9 +301,9 @@ a {
 }
 
 .carousel__dots {
-  display: none;
+  display: block;
   left: 50%;
-  margin-top: 2rem;
+  bottom: 50px;
   position: absolute;
   transform: translateX(-50%);
 }

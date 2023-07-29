@@ -12,7 +12,7 @@ import AboutUs from '../components/AboutUs';
 import WhyUs from '../components/WhyUs';
 import Blog from '../components/Blog';
 import Testimonials from '../components/Testimonials';
-import Parallax from '../components/Parallax';
+import ParallaxSlider from '../components/ParallaxSlider';
 // import data from '../data';
 
 const reducer = (state, action) => {
@@ -68,8 +68,8 @@ function HomeScreen() {
         <div id = "about-div">
           <AboutUs />
         </div>
-        <div id = "categories-div">
-          <Parallax />
+        <div id = "parallax-div" className=''>
+          <ParallaxSlider />
         </div>
         <div id = "whyus-div">
           <WhyUs />
