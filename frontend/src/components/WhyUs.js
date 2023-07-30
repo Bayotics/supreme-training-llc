@@ -1,81 +1,60 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import fast from '../assets/si1.png';
-import secure from '../assets/si2.png';
-import expert from '../assets/si3.png';
-import affordable from '../assets/si4.png';
-import warranty from '../assets/si5.png';
-import award from '../assets/si6.png';
+import cover from '../assets/wallpaper3.jpg'
+import aws from '../assets/aws-logo-white.png'
+import cisco from '../assets/cisco-logo-white.png'
+import vmware from '../assets/vmware-logo-white.png'
+import redhat from '../assets/red-hat-logo-white.png'
+import Microsoft from '../assets/microsoft-logo-white.png'
+import ibm from '../assets/ibm-logo-white.png'
+
+
+
+
 
 
 const WhyUs = () => {
     return(
     <div className = "">
-        <h1 id = "whyus-header" style={{marginTop: "60px"}} className='text-center'>
-            <span className='theme-color'>WHY </span>US?
-        </h1>
-        <p className="display-7 text-normal text-center text-muted">Fastest certifications with the best rates</p>
-        <div id='whyus-top'>
-            <div className='d-flex justify-content-around'>
-                <div className=''>
-                    <img src={fast} style={{height: "100px", width: "100px"}} alt = "fast" />
-                    <h5 className='mt-4'>Swift Services</h5>
-                    <div className='mt-4 whyus-caption' >
-                        <p style={{fontSize: '13px'}} className='text-left text-secondary'>Our trainings are concise and straight to the point. 
-                        Get certified within few weeks of training</p>
-                    </div>
+        <Row className='border'>
+            <Col className='border'>
+                <div className='border cover-img'>
+                    <img src = {cover} alt='cover-img' />
                 </div>
-                <div className=''>
-                    <img src={secure} style={{height: "100px", width: "100px"}} alt = "fast" />
-                    <h5 className='mt-4'>Expert training team</h5>
-                    <div className='mt-4 whyus-caption' >
-                        <p style={{fontSize: '12px'}} className='text-left text-secondary'>
-                            Our highly skilled trainers will share their knowledge and guide you all through the training
-                            process
-                        </p>
-                    </div>
+            </Col>
+            <Col className='border why-us-right pt-4 pb-4'>
+                <div className='border'>
+                    <h2 className='text-white'>The world's top educational institutions have <span className='text-bold'>accredited our courses</span></h2>   
+                    <p className='mt-4 text-white'>Our courses, materials, and trainers have received accreditation from prominent organizations such as AXELOS, APMG, BCS, PeopleCert, CompTIA, and Microsoft. This certification ensures that our training meets the rigorous standards set by these leading bodies.</p>
                 </div>
-                <div className='last-two'>
-                    <img src={expert} style={{height: "100px", width: "100px"}} alt = "fast" />
-                    <h5 className='mt-4'>Secure Payments</h5>
-                    <div className='mt-4  whyus-caption'  >
-                        <p style={{fontSize: '13px'}} className='text-left text-secondary'>
-                            Every payment on our platform is logged and transparent to you.
-                            100% money back guaranteed incase of a failed payment
-                        </p>
-                    </div>
+                <div className='border brands-logo'>
+                    <Row className='border'>
+                        <Col className='border'>
+                            <img src={aws} alt = 'aws' />
+                        </Col>
+                        <Col className='border'>
+                            <img src={ibm} alt = 'aws' />
+                        </Col>
+                        <Col className='border'>
+                            <img src={vmware} alt = 'aws' />
+                        </Col>
+                        <Col className='border'>
+                            <img src={Microsoft} alt = 'aws' />
+                        </Col>
+                    </Row>
+                    <Row className='border mt-4'>
+                        <Col className='border'>
+                            <img src={cisco} alt = 'aws' />
+                        </Col>
+                        <Col className='border'>
+                            <img src={redhat} alt = 'aws' />
+                        </Col>
+                        <Col className='border'></Col>
+                        <Col className='border'></Col>
+                    </Row>
                 </div>
-            </div>
-            <div className='team-main d-flex justify-content-around'>
-                <div className=''>
-                    <img src={affordable} style={{height: "100px", width: "100px"}} alt = "fast" />
-                    <h5 className='mt-4'>Discounted Services</h5>
-                    <div className='mt-4  whyus-caption'  >
-                        <p style={{fontSize: '13px'}} className='text-left text-secondary'>
-                            we offer training to highly productive courses at the best, pocket friendly rates 
-                        </p>
-                    </div>
-                </div>
-                <div className='marketable'>
-                    <img src={warranty} style={{height: "100px", width: "100px"}} alt = "fast" />
-                    <h5 className='mt-4'>Highly Marketable <span id = "marketable-span">Courses</span> </h5>
-                    <div className='mt-4  whyus-caption'  >
-                        <p style={{fontSize: '13px'}} className='text-left text-secondary'>
-                            we offer a wide range of training programs designed to enhance your IT capabilities and build your portfolio
-                        </p>
-                    </div>
-                </div>
-                <div className='last-two'>
-                    <img src={award} style={{height: "100px", width: "100px"}} alt = "fast" />
-                    <h5 className='mt-4'>Award winning</h5>
-                    <div className='mt-4  whyus-caption'  >
-                        <p style={{fontSize: '13px'}} className='text-left text-secondary'>
-                            we are a brand that has been recognized by top tech organisations on multiple occasions for our services. Our works speak for us 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </Col>
+        </Row>
     </div>)
 }
 export default WhyUs

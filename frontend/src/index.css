@@ -25,6 +25,27 @@ header{
   margin-top: 20px;
   top: 2px;
 }
+#search-bar {
+  width: 300px;
+}
+
+#search-outer {
+  /* left: 50px; */
+}
+
+#search-bar-inner {
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid white;
+}
+
+#search-bar-inner::placeholder {
+  font-weight: 100;
+  opacity: 1;
+  color: white;
+}
 .main-bg-captions{
   width: 100%;
   margin: auto;
@@ -64,7 +85,7 @@ header{
 }
 #about-div{
   position: relative;
-  top: 700px;
+  top: 640px;
 }
 #categories-div{
   position: relative;
@@ -72,11 +93,11 @@ header{
 }
 #whyus-div{
   position: relative;
-  top: 1000px
+  top: 850px
 }
 #blog-div{
   position: relative;
-  top: 700px
+  top: 900px
 }
 #testimonials-div{
   position: relative;
@@ -86,8 +107,11 @@ footer{
   position: relative;
   top: 700px;
 }
+#about-inner-div{
+  height: 700px;
+}
 #about-text-box{
-  height: 50%;
+  height: 25%;
   width: 80%;
   margin-left: 20px;
   margin-top: 50px;
@@ -101,6 +125,74 @@ footer{
   font-size: 14px;
   font-weight: 300;
   color: black;
+}
+.about-card-inner{
+  width: 85%;
+  height: 580px;
+  margin-top: 55px;
+  margin-left: 50px;
+  background-image: url(../src/assets/wallpaper2edit.jpg);
+  background-size: cover;
+}
+.about-card-texts{
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+.about-h1{
+  margin-top: 30px;
+}
+.about-h1 h1{
+  font-size: 30px;
+  text-align: left;
+}
+.about-p{
+  margin-top: 50px;
+  
+}
+.about-p p{
+  text-align: left;
+  line-height: 1.5;
+}
+.about-promo p{
+  font-size: 18px;
+  color: rgb(230, 226, 38);
+}
+.about-button-btn{
+  height: 50px;
+  width: 180px;
+  background: linear-gradient(to right, #ddddc6, #e0af0c);
+  border: none;
+}
+.cover-img{
+  width: 100%;
+}
+.cover-img img{
+  width: 100%;
+}
+.why-us-right{
+  background-color: #141c36;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills-p{
+  width: 60%;
 }
 .about-bg-btn{
   width: 50%;
@@ -122,7 +214,7 @@ footer{
 #parallax-div{
 
   position: relative;
-  top: 880px;
+  top: 700px;
 }
 .parallax-row{
   height: 500px;
@@ -776,10 +868,12 @@ product-details-tab {
   border-radius: 0;
 }
 #button-search{
-  background-color: #0d6efd;
+  background-color: transparent;
   width: 40px;
   color: white;
   border: none;
+  position: relative;
+  right: 30px;
 }
 #button-search :hover{
 }
