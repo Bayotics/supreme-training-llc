@@ -114,7 +114,7 @@ function App() {
                       <Link 
                       to = "/search?category=all&query=all&price=all&rating=all&order=newest&page=1" 
                       className='nav-link text-white bold-text'>COURSES</Link>
-                      <Link to = "/aboutus" className='nav-link text-white bold-text'>CERTIFICATIONS</Link>
+                      <Link to = "/" className='nav-link text-white bold-text'>CERTIFICATIONS</Link>
                       <Link to = "/" className='nav-link text-white bold-text' id = "contact-nav">COMPANY</Link>
                   <Link to="/cart" className="nav-link text-white">
                     <i className="fas fa-shopping-cart"></i>

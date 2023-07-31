@@ -26,7 +26,7 @@ const WhyUs = () => {
                 </div>
             </Col>
             <Col className=' why-us-right pt-4 pb-4'>
-                <div className=''>
+                <div className='why-us-right-header'>
                     <h2 className='text-white'>The world's top educational institutions have <span className='text-bold'>accredited our courses</span></h2>   
                     <p className='mt-4 text-white'>Our courses, materials, and trainers have received accreditation from prominent organizations such as AWS, IBM, Vmware, Microsoft, CompTIA, Cisco, RedHat, and Google. This certification ensures that our training meets the rigorous standards set by these leading bodies.</p>
                 </div>

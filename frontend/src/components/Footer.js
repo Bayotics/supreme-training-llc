@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='container text-white' id = "footer-div">
               <Row id='footer-inner' className='border-bottom'>
                   <Col>
-                    <div className='w-50 border-bottom border-2 border-primary'>
+                    <div className='w-50 border-bottom border-2 border-warning'>
                         <h5 className=''>Training Periods</h5>
                     </div>
                     <div id ="border-text">
@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
                   </Col>
                   <Col>
-                    <div className='w-50 border-bottom border-2 border-primary'>
+                    <div className='w-50 border-bottom border-2 border-warning'>
                         <h5 className=''>Newsletter</h5>
                     </div>
                     <div id ="border-text">
@@ -31,7 +31,7 @@ const Footer = () => {
                   </Col>
                   <Col>
                     <div className='social-media-main'>
-                        <div className='w-50 border-bottom border-2 border-primary' id='social-media'>
+                        <div className='w-50 border-bottom border-2 border-warning' id='social-media'>
                             <h5 className=''>Social Media</h5>
                         </div>
                         <p className='mt-4'>Connect us on social media</p>
@@ -51,7 +51,7 @@ const Footer = () => {
               </Row>
               <Row className='mt-4' id = "footer-lower">
                 <Col>
-                     <div className='w-100 border-bottom border-2 border-primary'>
+                     <div className='w-100 border-bottom border-2 border-warning'>
                         <h5 className=''>About Supreme Training</h5>
                     </div>
                     <div id ="border-text">
@@ -60,7 +60,7 @@ const Footer = () => {
                     </div>
                 </Col>
                 <Col className='ml-0'>
-                    <div className='w-100 border-bottom border-2 border-primary'>
+                    <div className='w-100 border-bottom border-2 border-warning'>
                         <h5 className=''>Information</h5>
                     </div>
                     <div id = "border-text" className='text-white'>
@@ -73,7 +73,7 @@ const Footer = () => {
                     </div>
                 </Col>
                 <Col>
-                    <div className='w-100 border-bottom border-2 border-primary'>
+                    <div className='w-100 border-bottom border-2 border-warning'>
                         <h5 className=''>Contact Us</h5>
                     </div>
                      <div className="">

@@ -97,15 +97,16 @@ header{
 }
 #blog-div{
   position: relative;
-  top: 900px
+  top: 1000px
 }
+
 #testimonials-div{
   position: relative;
-  top: 700px
+  top: 1100px
 }
 footer{
   position: relative;
-  top: 700px;
+  top: 1300px;
 }
 #about-inner-div{
   height: 700px;
@@ -166,20 +167,198 @@ footer{
 }
 .cover-img{
   width: 100%;
+  height: 100%;
 }
 .cover-img img{
   width: 100%;
+  height: 100%;
 }
 .why-us-right{
   background-color: #141c36;
+  padding-left: 30px;
+}
+.why-us-right-header{
+  width: 80%;
+}
+.brands-logo{
+  width: 90%;
+}
+.carousel-control-next-icon {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/1549/1549612.png);
+}
+.carousel-control-prev-icon {
+  background-image: url(https://cdn-icons-png.flaticon.com/128/2609/2609370.png);
+}
+.carousel-control-next,
+.carousel-control-prev{
+  opacity: 0;
 }
 
+/* blog */
 
+.container-blog {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  padding: 0;
+}
+.blog-img {
+  padding: 0;
+}
+.card-header{
+  width: 100%;
+  padding: 0;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
 
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
+.tag-teal {
+  background-color: #47bcd4;
+}
 
+.tag-purple {
+  background-color: #5e76bf;
+}
+
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user-info h5 {
+  margin: 0;
+}
+
+.user-info small {
+  color: #545d7a;
+}
+
+/* end */
+
+/* testimonials */
+
+.testimonials-section {
+  width: 100%;
+  min-height: 700px;
+}
+
+#main-testimonial-cards {
+  margin-top: 50px;
+}
+
+#testimonial-card-main {
+  border-radius: 15px;
+  padding-bottom: 40px;
+  background-color: #ffbfbf;
+  color: #000000;
+}
+
+#testimonial-card-main-two {
+  border-radius: 15px;
+  padding-bottom: 40px;
+  background-color: #ffddab;
+  color: #000000;
+}
+
+#testimonial-card-main-three {
+  border-radius: 15px;
+  padding-bottom: 40px;
+  background-color: #b3e9cb;
+  color: #000000;
+}
+
+#testimonial-card-main-four {
+  border-radius: 15px;
+  padding-bottom: 40px;
+  background-color: #99ceff;
+  color: #000000;
+}
+
+.testimonial-inner {
+  height: 70%;
+  margin-top: 180px;
+  margin-left: 50px;
+}
+
+#testimonial-cap {
+  margin: auto;
+  width: 50%;
+}
+
+#testimonial-pfp {
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+#testimonial-pic {
+  height: 120px;
+  width: 120px;
+}
+
+#testimonial-text {
+  margin-top: 30px;
+  width: 90%;
+}
+
+.test-p {
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.testimonials-carousel {
+  margin-top: 80px;
+}
+
+/* end */
 
 
 
@@ -924,11 +1103,11 @@ product-details-tab {
   margin-left: 40px;
 }
 .testimonials-section{
-  background-image: url(../src/assets/test_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height:600px;
+  /* display: none; */
 }
 .testimonial-inner{
   height: 70%;
@@ -2431,5 +2610,83 @@ product-details-tab {
   }
   #team-title{
     margin-left: 50px;
+  }
+}
+
+
+/* macbook and smaller screens */
+
+@media screen and (min-width: 1050px) and (max-width: 1210px) {
+  #parallax-item{
+    width: 21rem;
+    height: 33rem;
+  }
+  #parallax-main {
+    height: 33rem;
+    padding-left: 20px;
+  }
+  .container-blog{
+    margin: auto;
+    margin-left: 30px;
+    padding-left: 30px;
+  }
+  #main-testimonial-cards{
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  footer {
+    position: relative;
+    top: 1400px;
+  }
+  .about-card-inner{
+    height: 660px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1049px) {
+  #about-text{
+    width: 460px;
+    
+  }
+  .skills-p {
+    width: 100%;
+  }
+  .row-main{
+    margin-top: 50px;
+  }
+  .about-card-inner {
+    height: 880px;
+  }
+  #parallax-div {
+    top: 950px;
+  }
+  #parallax-main {
+    height: 41rem;
+    padding-left: 0px;
+  }
+  #parallax-item {
+    width: 15rem;
+    height: 40rem;
+  }
+  #whyus-div {
+    top: 1150px;
+  }
+  .parallax-button-trending {
+    height: 30px;
+    width: 50%;
+  }
+  #blog-div {
+    top: 1250px;
+  }
+  .container-blog {
+    margin: auto;
+    margin-left: 0px;
+    padding-left: 10px;
+  }
+  #testimonials-div {
+    top: 1300px;
+  }
+  footer{
+    top: 1800px;
   }
 }

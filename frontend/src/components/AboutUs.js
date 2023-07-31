@@ -12,7 +12,7 @@ const AboutUs = () => {
                         <h1>Acquire the skills to <span className='text-bold'>maintain a competitive edge in IT.</span></h1>
                     </div>
                     <div className="container">
-                        <div className="row">
+                        <div className="row row-main">
                             <div className="col">
                                 <div className='row'>
                                     <div className='col-3 ' id='budget-pic'>

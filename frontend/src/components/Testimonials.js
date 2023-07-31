@@ -1,6 +1,5 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Carousel from 'react-bootstrap/Carousel';
 import client1 from '../assets/client1.jpg';
 import client2 from '../assets/client2.jpg';
 import client3 from '../assets/client3.jpg';
@@ -9,60 +8,83 @@ import client3 from '../assets/client3.jpg';
 const Testimonials = () => {
     return (
         <div className="mt-4 testimonials-section text-white">
-            <Row>
-                <Col>
-                    <div className='testimonial-inner'>
-                        <h2>TESTIMONIALS</h2>
-                        <p className='text-light mt-0'>Here are testimonials from some of our clients...</p>
-                        <div className='testimonials-carousel'>
-                            <Carousel>
-                                <Carousel.Item interval={1000}>
-                                    <div className='row'>
-                                        <div className='col-4' id = "testimonial-pfp">
-                                            <img src={client1} alt='client1'
-                                                 style={{borderRadius: "50%"}}
-                                            />
-                                        </div>
-                                        <div className='col-8'>
-                                            <p className='test-p'>You guys rock at supreme! Thank you for making it painless, pleasant and most of all hassle free!I am really satisfied with my first IT certification</p>
-                                            <h6 className='mt-2 test-name'>Maya</h6>
-                                            <h6 className='mt-2 test-country'>ONTARIO, CANADA</h6>
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                                <Carousel.Item interval={1000}>
-                                    <div className='row'>
-                                        <div className='col-4' id = "testimonial-pfp">
-                                            <img src={client2} alt='client1'
-                                                 style={{borderRadius: "50%"}}
-                                            />
-                                        </div>
-                                        <div className='col-8'>
-                                            <p className='test-p'>You prepare people to carry out skills in the real world. Keep up the good work. What I have learned in this course, I will be able to apply in the real world.</p>
-                                            <h6 className='mt-2 test-name'>Cristine</h6>
-                                            <h6 className='mt-2 test-country'>NEW YORK, USA</h6>
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <div className='row'>
-                                        <div className='col-4' id = "testimonial-pfp">
-                                            <img src={client3} alt='client1'
-                                                 style={{borderRadius: "50%"}}
-                                            />
-                                        </div>
-                                        <div className='col-8'>
-                                            <p className='test-p'>The class is almost identical to a graduate level course I took at a well known University in Boston, Massachusetts.</p>
-                                            <h6 className='mt-2 test-name'>Amy</h6>
-                                            <h6 className='mt-2 test-country'>MANCHESTER, UK</h6>
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                            </Carousel>
-                        </div> 
+            <h5 className='text-center text-black text-bold'>TESTIMONIALS</h5>
+            <div id='testimonial-cap'>
+                <h1 className='text-center text-black text-bold'>We are dedicated and knowledgeable collaborators.</h1>
+                <h6 className='text-center text-black'>At our company, we greatly recognize that customer feedback is essential in guiding us towards improvement and ensuring we deliver the best possible service.</h6>
+            </div>
+            <Row className='gap-4' id='main-testimonial-cards'>
+                <Col className='border' id='testimonial-card-main'>
+                    <div className='text-center testimonial-card'>
+                         <div className='d-flex justify-content-center' id = "testimonial-pfp">
+                            <img src={client1} alt='client1' id= "testimonial-pic"
+                                style={{borderRadius: "50%"}}
+                            />
+                        </div>
+                        <div id='testimonial-text'>
+                            <p>
+                                <span>
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I have had an incredible experience with supreme training. The courses are well-structured, engaging, and taught by industry experts. Thanks to their user-friendly platform, I was able to balance learning with my busy schedule. I highly recommend their services to anyone seeking to upskill or advance their career!" - 
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <p className='text-center text-bold'> Jane</p>
+                        {/* <p className='text-center'>Product Manager Cashfree</p> */}
                     </div>
                 </Col>
-                <Col id= "testimonial-right">
+                <Col className='border' id='testimonial-card-main-two'>
+                    <div className='text-center testimonial-card'>
+                         <div className='d-flex justify-content-center' id = "testimonial-pfp">
+                            <img src={client2} alt='client1' id= "testimonial-pic"
+                                style={{borderRadius: "50%"}}
+                            />
+                        </div>
+                        <div id='testimonial-text'>
+                            <p>
+                                <span>
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I am delighted with the quality of training I received from supreme .The customer service team was prompt and helpful in addressing any queries. I am genuinely grateful for the positive impact this training has had on my AWS career growth
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <p className='text-center text-bold'>Olivia</p>
+                        {/* <p className='text-center'>Db Administrator</p> */}
+                    </div>
+                </Col>
+                <Col className='border' id='testimonial-card-main-three'>
+                    <div className='text-center testimonial-card'>
+                         <div className='d-flex justify-content-center' id = "testimonial-pfp">
+                            <img src={client3} alt='client1' id= "testimonial-pic"
+                                style={{borderRadius: "50%"}}
+                            />
+                        </div>
+                        <div id='testimonial-text'>
+                            <p>
+                                <span>
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I couldn't be happier with the CISA certification I earned through this training company. The variety of courses offered allowed me to explore different fields and choose the ones that aligned with my interests. The learning materials are top-notch, and the interactive exercises make learning enjoyable.  
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <p className='text-center text-bold'>Ella</p>
+                        {/* <p className='text-center'>Backend developer</p> */}
+                    </div>
+                </Col>
+                <Col className='border' id='testimonial-card-main-four'>
+                    <div className='text-center testimonial-card'>
+                         <div className='d-flex justify-content-center' id = "testimonial-pfp">
+                            <img src={client1} alt='client1' id= "testimonial-pic"
+                                style={{borderRadius: "50%"}}
+                            />
+                        </div>
+                        <div id='testimonial-text'>
+                            <p>
+                                <span>
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I highly recommend supreme training to anyone looking to enhance their expertise. As a seasoned professional, I was initially skeptical about online learning, but this platform exceeded my expectations. The courses were challenging yet manageable, and the real-world applications helped me apply my knowledge immediately. 
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <p className='text-center text-bold'>Lizzy</p>
+                        {/* <p className='text-center'>Product manager</p> */}
+                    </div>
                 </Col>
             </Row>
         </div>

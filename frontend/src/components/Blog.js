@@ -1,80 +1,83 @@
-import blog1 from '../assets/blog1.jpg';
-import blog2 from '../assets/blog2.jpg';
-import blog3 from '../assets/blog3.jpg';
+import blog1 from '../assets/client1.jpg';
+import blog2 from '../assets/client2.jpg';
+import blog3 from '../assets/client3.jpg';
 
 
 const Blog = () => {
     return(
-        <div>
-            <div className="section padding_layout_1">
-  <div className="container">
-    <div className="row">
-      <div className="col-md-12">
-        <div className="full">
-          <div className="main_heading text_align_left">
-            <h1 id = "" style={{marginTop: "60px"}} className='text-center'>
-            <span className='theme-color'>LATEST</span><span id = "blog-span"> FROM OUR</span> BLOG
+      <div>
+        <div className="main_heading">
+            <h1 id = "" style={{marginBottom: "30px"}} className='text-center'>
+            <span className='text-centre'>LATEST</span><span id = "blog-span"> FROM OUR</span> BLOG
         </h1>
           </div>
-        </div>
-      </div>
+        <div className="container-blog row">
+  <div className="card col blog-img">
+    <div className="card-header">
+      <img src="https://guardian.ng/wp-content/uploads/2020/08/global-internet.jpg" alt="rover" />
     </div>
-    <div className="row">
-      <div className="col-md-4">
-        <div className="full blog_colum">
-          <div className="blog_feature_img"> 
-          <img src={blog1} style = {{height: "250px", width: "100%"}} alt="#" /> 
-          </div>
-          <div className="post_time mt-4 text-secondary">
-            <p style={{fontSize: "12px"}}><i className="fa fa-clock-o"></i> July 07, 2023 ( In Maintenance )</p>
-          </div>
-          <div className="blog_feature_head">
-            <h5>Why Your Computer Hates You</h5>
-          </div>
-          <div className="blog_feature_cont">
-            <p className="text-secondary">Your computer hates you because you have no recovery strategy. You are under the impression the recovery partition on that old Dell or HP machine will save your bacon when you need to reinstall your Operating System....</p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-4">
-        <div className="full blog_colum">
-          <div className="blog_feature_img"> 
-            <img src={blog2} style = {{height: "250px", width: "100%"}} alt="#" /> 
-          </div>
-          <div className="post_time mt-4 text-secondary">
-            <p style={{fontSize: "12px"}}><i className="fa fa-clock-o"></i> July 07, 2023 ( In Maintenance )</p>
-          </div>
-          <div className="blog_feature_head">
-            <h5>Easy Tips To Computer Repair</h5>
-          </div>
-          <div className="blog_feature_cont">
-            <p className="text-secondary">Any abnormality in the integrated components of a computer can prove harmful to its performance, but some general computer issues can be addressed without seeking professional IT help. Among the most common problems, ..... </p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-4">
-        <div className="full blog_colum">
-          <div className="blog_feature_img">
-             <img src={blog3} style = {{height: "250px", width: "100%"}} alt="#" /> 
-          </div>
-          <div className="post_time mt-4 text-secondary">
-            <p style={{fontSize: "12px"}}><i className="fa fa-clock-o"></i> July 07, 2023( In Maintenance )</p>
-          </div>
-          <div className="blog_feature_head">
-            <h5>Computer Maintenance 2023</h5>
-          </div>
-          <div className="blog_feature_cont">
-            <p className="text-secondary">Computer maintenance is the practice of keeping computers in a good state of repair. A computer containing accumulated dust and debris may not run properly. The crumbs, dust, and other particulate that fall between the keys and...</p>
-          </div>
+    <div className="card-body">
+      <span className="tag tag-yellow">Technology</span>
+      <h4>
+        The Real Impact of Internet Shutdowns
+      </h4>
+      <p>
+        The NetLoss calculator is an innovative tool designed to approximate the financial impact of Internet shutdowns...</p>
+      <div className="user">
+        <img src={blog1} alt="user" />
+        <div className="user-info">
+          <h5>Admin</h5>
+          <small>2h ago</small>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
+  <div className="card col">
+    <div className="card-header">
+      <img src="https://codesealer.com/wp-content/uploads/2020/02/Channels-end-to-end-encryption.jpg" alt="ballons" />
+    </div>
+    <div className="card-body">
+      <span className="tag tag-purple">Popular</span>
+      <h4>
+        Raise your voice in opposition to bills that oppose end-to-end encryption
+      </h4>
+      <p>
+        The EARN IT Act, STOP CSAM Act, and KOSA in the United States have the potential to compromise end-to-end encryption, creating a collective vulnerability for all of us.
+      </p>
+      <div className="user">
+        <img src={blog2} alt="user" />
+        <div className="user-info">
+          <h5>Maggy</h5>
+          <small>Yesterday</small>
         </div>
+      </div>
+    </div>
+  </div>
+  <div className="card col">
+    <div className="card-header">
+      <img src="https://static.agcanada.com/wp-content/uploads/sites/5/2014/09/rural-internet-78295357-thinkstock.jpg" alt="city" />
+    </div>
+    <div className="card-body">
+      <span className="tag tag-pink">Design</span>
+      <h4>
+        How a Remote Village in Armenia Constructed Their Own Internet.
+      </h4>
+      <p>
+        The "Connecting the Unconnected: Europe and Beyond" summit is scheduled to occur in Yerevan, Armenia, from June 6 to 7, 2023.
+      </p>
+      <div className="user">
+        <img src={blog3} alt="user" />
+        <div className="user-info">
+          <h5>Lizzy Q</h5>
+          <small>1w ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+      </div>
     )
 }
 
 export default Blog
+
