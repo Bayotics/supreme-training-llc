@@ -14,7 +14,7 @@ const Testimonials = () => {
                 <h6 className='text-center text-black'>At our company, we greatly recognize that customer feedback is essential in guiding us towards improvement and ensuring we deliver the best possible service.</h6>
             </div>
             <Row className='gap-4' id='main-testimonial-cards'>
-                <Col className='border' id='testimonial-card-main'>
+                <Col className='testimonial-card-main' id='testimonial-card-main'>
                     <div className='text-center testimonial-card'>
                          <div className='d-flex justify-content-center' id = "testimonial-pfp">
                             <img src={client1} alt='client1' id= "testimonial-pic"
@@ -32,7 +32,7 @@ const Testimonials = () => {
                         {/* <p className='text-center'>Product Manager Cashfree</p> */}
                     </div>
                 </Col>
-                <Col className='border' id='testimonial-card-main-two'>
+                <Col className='testimonial-card-main' id='testimonial-card-main-two'>
                     <div className='text-center testimonial-card'>
                          <div className='d-flex justify-content-center' id = "testimonial-pfp">
                             <img src={client2} alt='client1' id= "testimonial-pic"
@@ -50,7 +50,7 @@ const Testimonials = () => {
                         {/* <p className='text-center'>Db Administrator</p> */}
                     </div>
                 </Col>
-                <Col className='border' id='testimonial-card-main-three'>
+                <Col className='testimonial-card-main' id='testimonial-card-main-three'>
                     <div className='text-center testimonial-card'>
                          <div className='d-flex justify-content-center' id = "testimonial-pfp">
                             <img src={client3} alt='client1' id= "testimonial-pic"
@@ -68,7 +68,7 @@ const Testimonials = () => {
                         {/* <p className='text-center'>Backend developer</p> */}
                     </div>
                 </Col>
-                <Col className='border' id='testimonial-card-main-four'>
+                <Col className='testimonial-card-main' id='testimonial-card-main-four'>
                     <div className='text-center testimonial-card'>
                          <div className='d-flex justify-content-center' id = "testimonial-pfp">
                             <img src={client1} alt='client1' id= "testimonial-pic"

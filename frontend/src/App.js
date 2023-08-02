@@ -92,6 +92,7 @@ function App() {
           <Navbar variant="white" expand="lg">
             <Container id = "main-container">
                <Button
+               id='setSidebarIsOpen'
                 variant="white"
                 onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
               >
@@ -100,7 +101,7 @@ function App() {
               <LinkContainer to="/">
                 <Navbar.Brand id = "mail-logo">
                   <img src={logo} 
-                  style={{height: '80px', width: '80px'}}
+                  style={{height: '80px', width: '100px'}}
                   alt='logo' />
                 </Navbar.Brand>
               </LinkContainer>

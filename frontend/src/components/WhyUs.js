@@ -19,8 +19,8 @@ import oracle from '../assets/oracle-logo-white.png'
 const WhyUs = () => {
     return(
     <div className = "">
-        <Row className=''>
-            <Col className='p-0'>
+        <Row className='why-us-cover'>
+            <Col className='p-0 why-us-cover-img'>
                 <div className=' cover-img '>
                     <img src = {cover} alt='cover-img' />
                 </div>
@@ -31,28 +31,28 @@ const WhyUs = () => {
                     <p className='mt-4 text-white'>Our courses, materials, and trainers have received accreditation from prominent organizations such as AWS, IBM, Vmware, Microsoft, CompTIA, Cisco, RedHat, and Google. This certification ensures that our training meets the rigorous standards set by these leading bodies.</p>
                 </div>
                 <div className=' brands-logo'>
-                    <Row className=''>
+                    <Row className='brands-logo-inner'>
                         <Col className=''>
                             <img src={aws} alt = 'aws' />
                         </Col>
                         <Col className=''>
                             <img src={ibm} alt = 'aws' />
                         </Col>
-                        <Col className=''>
+                        <Col className='why-us-cover-brand'>
                             <img src={vmware} alt = 'aws' />
                         </Col>
-                        <Col className=''>
+                        <Col className='why-us-cover-brand'>
                             <img src={Microsoft} alt = 'aws' />
                         </Col>
                     </Row>
                     <Row className=' mt-4'>
-                        <Col className=''>
+                        <Col className='why-us-cover-brand-cisco'>
                             <img src={cisco} alt = 'aws' />
                         </Col>
-                        <Col className=''>
+                        <Col className='why-us-cover-brand-redhat'>
                             <img src={redhat} alt = 'aws' />
                         </Col>
-                        <Col className=''>
+                        <Col className='why-us-cover-brand-google'>
                             <img src={google} alt = 'aws' />
                         </Col>
                     </Row>

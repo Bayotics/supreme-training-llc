@@ -13,7 +13,7 @@ const AboutUs = () => {
                     </div>
                     <div className="container">
                         <div className="row row-main">
-                            <div className="col">
+                            <div className="col budget-cover">
                                 <div className='row'>
                                     <div className='col-3 ' id='budget-pic'>
                                     <i className="fa fa-money fa-3x" aria-hidden="true"></i>
@@ -37,7 +37,7 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-100 mt-8"></div>
+                            <div className="w-100 white-space-vertical mt-8"></div>
                                 <div className="col">
                                     <div className="col">
                                         <div className='row'>
