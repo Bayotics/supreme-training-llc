@@ -13,6 +13,7 @@ import WhyUs from '../components/WhyUs';
 import Blog from '../components/Blog';
 import Testimonials from '../components/Testimonials';
 import ParallaxSlider from '../components/ParallaxSlider';
+import ScrollAnimation from 'react-animate-on-scroll';
 // import data from '../data';
 
 const reducer = (state, action) => {
@@ -59,28 +60,36 @@ function HomeScreen() {
   return (
     <div>
       <div id="hero-background" className='w-100 mb-4'>
-        <Slider />
+          <Slider />
       </div>
       <div className='' id = "main-products">
         <Helmet>
           <title>Supreme Training </title>
         </Helmet>
         <div id = "about-div">
-          <AboutUs />
+          <ScrollAnimation animateIn="fadeIn" duration={3000}>
+            <AboutUs />
+          </ScrollAnimation>
         </div>
         <div id = "parallax-div" className=''>
-          <ParallaxSlider />
+          <ScrollAnimation animateIn="fadeIn">
+            <ParallaxSlider />
+          </ScrollAnimation>
         </div>
         <div id = "whyus-div">
-          <WhyUs />
+          <ScrollAnimation animateIn="fadeIn">
+            <WhyUs />
+          </ScrollAnimation>
         </div>
         <div id = "blog-div">
-          <Blog />
+          <ScrollAnimation animateIn="fadeIn">
+            <Blog />
+          </ScrollAnimation>
         </div>
         <div>
         </div>
         <div id = "testimonials-div">
-          <Testimonials />
+             <Testimonials />
         </div>
         {/* <h1 className='text-center mt-4'><span className='theme-color'>FEATURED </span> PRODUCTS</h1>
         <div className="products" id = "featured-products">
