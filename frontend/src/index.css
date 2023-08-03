@@ -1279,7 +1279,11 @@ product-details-tab {
   height: 100%;
   width: 100%;
  }
-
+.long-input{
+  height: 200px;
+  padding: 2;
+  margin: 0;
+}
 
 
 

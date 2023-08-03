@@ -4,23 +4,22 @@ import MessageBox from '../components/MessageBox';
 
 const ProductDetails = ({product, rating}) => {
     const reviewLength = product.reviews.length;
+     const additionalInfoContent = <div className="tab-pane fade show active" id="product-info-tab"   aria-labelledby="product-info-link">
+                                <div className="product-desc-content">
+                                    <h3>Additional Information</h3>
+                                    <p>{product.longDescription}</p>
+                                </div>
+                            </div>;
      const descriptionContent = <div className="tab-pane fade show active"    aria-labelledby="product-desc-link">
                                     <div className="product-desc-content">
                                         <h3>Product Information</h3>
                                         <p>{product.description}</p>
                                     </div>
                                 </div>;
-    const additionalInfoContent = <div className="tab-pane fade show active" id="product-info-tab"   aria-labelledby="product-info-link">
+        const courseOutline =  <div className="tab-pane fade show active" id="product-shipping-tab"   aria-labelledby="product-shipping-link">
                                 <div className="product-desc-content">
-                                    <h3>Additional Information</h3>
-                                    <p>{product.longDescription}</p>
-                                </div>
-                            </div>;
-        const shippingContent =  <div className="tab-pane fade show active" id="product-shipping-tab"   aria-labelledby="product-shipping-link">
-                                <div className="product-desc-content">
-                                    <h3>Delivery & returns</h3>
-                                    <p>We deliver to over 100 countries around the world. For full details of the delivery options we offer, please view our <a href="#">Delivery information</a><br/>
-                                    We hope you’ll love every purchase, but if you ever need to return an item you can do so within a month of receipt. For full details of how to make a return, please view our <a href="#">Returns information</a></p>
+                                    <h3>Course Outline</h3>
+                                    <p>{product.courseOutline}</p>
                                 </div>
                             </div>
         const reviewsContent = 
@@ -58,15 +57,15 @@ const ProductDetails = ({product, rating}) => {
                     </div>
                 </div>
             </div>
-    const [content, setContent] = useState(descriptionContent);
+    const [content, setContent] = useState(additionalInfoContent);
     const firstMenufunction = () => {
-        setContent(descriptionContent)
-    }
-    const secondMenuFunction = () => {
         setContent(additionalInfoContent)
     }
+    const secondMenuFunction = () => {
+        setContent(descriptionContent)
+    }
     const thirdMenufunction = () => {
-        setContent(shippingContent)
+        setContent(courseOutline)
     }
     const fourthMenuContent = () => {
         setContent(reviewsContent)
@@ -75,14 +74,14 @@ const ProductDetails = ({product, rating}) => {
     return (
         <div>
             <ul className="nav nav-pills justify-content-center" role="tablist">
-                <li className="nav-item" onClick = {firstMenufunction}>
-                    <p className="nav-link" >Description</p>
-                </li>
-                <li className="nav-item" onClick={secondMenuFunction}>
+                 <li className="nav-item" onClick={firstMenufunction}>
                     <p className="nav-link" >Additional information</p>
                 </li>
+                <li className="nav-item" onClick = {secondMenuFunction}>
+                    <p className="nav-link" >Description</p>
+                </li>
                 <li className="nav-item" onClick={thirdMenufunction}>
-                    <p className="nav-link" >Shipping & Returns</p>
+                    <p className="nav-link" >Course Outline</p>
                 </li>
                 <li className="nav-item" onClick={fourthMenuContent}>
                     <p className="nav-link" >Reviews</p>

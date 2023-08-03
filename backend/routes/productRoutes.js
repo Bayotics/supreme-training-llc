@@ -73,8 +73,8 @@ productRouter.put(
       product.attendee = req.body.attendee;
       product.duration = req.body.duration;
       product.modeOfTraining = req.body.modeOfTraining;
-      product.timeFrom = new Date;
-      product.timeTo = new Date;
+      product.timeFrom = req.body.timeFrom;
+      product.timeTo =  req.body.timeTo;
       product.whatYouWillLearn = req.body.whatYouWillLearn;
 
       await product.save();

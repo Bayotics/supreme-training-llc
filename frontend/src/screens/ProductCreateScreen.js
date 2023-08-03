@@ -95,7 +95,8 @@ export default function ProductCreateScreen() {
     "Microsoft", "Oracle", "PMI (Project Management Institute) ","Red Hat ", "VMware", "others",
   ]
   categoriesList.sort();
-  const modeList = ['virtual class', 'physical class'];
+  const modeList = ['', 'virtual class', 'physical class'];
+  modeList.sort();
 
   const submitHandler = async (e) => {
     console.log("Form is working")
@@ -273,7 +274,7 @@ export default function ProductCreateScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="duration">
-            <Form.Label>Duration</Form.Label>
+            <Form.Label>Duration (in hours)</Form.Label>
             <Form.Control
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
@@ -283,6 +284,7 @@ export default function ProductCreateScreen() {
           <Form.Group className="mb-3" controlId="longDescription">
             <Form.Label>Long Description</Form.Label>
             <Form.Control
+              className='long-input'
               placeholder='More details about the course. e.g intro, background, etc'
               value={longDescription}
               onChange={(e) => setLongDescription(e.target.value)}
@@ -323,24 +325,38 @@ export default function ProductCreateScreen() {
           </Form.Group>
           <Form.Group className="mb-3" controlId="courseOutline">
             <Form.Label>Course Outline</Form.Label>
-              <MenuBar 
-              value={courseOutline} 
-              onChange={(e) => setCourseOutline(e.target.value)}
-              required/>
+              <Form.Control
+                className='long-input'
+                id="courseOutline-input"
+                value={courseOutline} 
+                onChange={(e) => setCourseOutline(e.target.value)}
+                required/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="timeTo">
             <Form.Label>Who Should attend?</Form.Label>
-              <MenuBar 
-              value={attendee} 
+              <Form.Control
+                className='long-input'
+                id="attendee-input"
+                 value={attendee} 
               onChange={(e) => setAttendee(e.target.value)}
               required/>
+              {/* <MenuBar 
+              value={attendee} 
+              onChange={(e) => setAttendee(e.target.value)}
+              required/> */}
           </Form.Group>
           <Form.Group className="mb-3" controlId="whatYouWillLearn">
             <Form.Label>What you will learn</Form.Label>
-              <MenuBar 
+              <Form.Control
+                className='long-input'
+                id="courseOutline-input"
+                value={whatYouWillLearn} 
+                onChange={(e) => setWhatYouWillLearn(e.target.value)}
+              required />
+              {/* <MenuBar 
               value={whatYouWillLearn} 
               onChange={(e) => setWhatYouWillLearn(e.target.value)}
-              required/>
+              required/> */}
           </Form.Group>
           <Form.Group className="mb-3" controlId="modeOfTraining">
             <Form.Label>Mode of training</Form.Label>

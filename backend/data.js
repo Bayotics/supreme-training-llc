@@ -39,7 +39,16 @@ const data = {
       rating: 4.5,
       numReviews: 10,
       description: 'high quality shirt',
-      longDescription: "Ori e ti buru danuhaha"
+      longDescription: "Ori e ti buru danuhaha",
+      courseOutline:"ewe",
+      dateFrom: Date.now(),
+      dateTo: Date.now(),
+      timeFrom:"2pm",
+      timeTo:"3pm",
+      attendee:"ew",
+      duration: 333,
+      modeOfTraining:"virtual class",
+      whatYouWillLearn: "e"
     },
     {
       // _id: '2',
@@ -52,7 +61,16 @@ const data = {
       rating: 4.0,
       numReviews: 10,
       description: 'high quality product',
-      longDescription: "Ori e ti buru danu okay na"
+      longDescription: "Ori e ti buru danu okay na",
+       courseOutline:"ewe",
+      dateFrom: Date.now(),
+      dateTo: Date.now(),
+      timeFrom:"2pm",
+      timeTo:"3pm",
+      attendee:"ew",
+      duration: 333,
+      modeOfTraining:"virtual class",
+      whatYouWillLearn: "e"
     },
     {
       // _id: '3',
@@ -65,7 +83,16 @@ const data = {
       rating: 4.5,
       numReviews: 14,
       description: 'high quality product',
-      longDescription: "Ori e ti buru danu lmao"
+      longDescription: "Ori e ti buru danu lmao",
+       courseOutline:"ewe",
+      dateFrom: Date.now(),
+      dateTo: Date.now(),
+      timeFrom:"2pm",
+      timeTo:"3pm",
+      attendee:"ew",
+      duration: 333,
+      modeOfTraining:"virtual class",
+      whatYouWillLearn: "e"
     },
     {
       // _id: '4',
@@ -78,7 +105,16 @@ const data = {
       rating: 4.5,
       numReviews: 10,
       description: 'high quality product',
-      longDescription: "Ori e ti buru danu"
+      longDescription: "Ori e ti buru danu",
+       courseOutline:"ewe",
+      dateFrom: Date.now(),
+      dateTo: Date.now(),
+      timeFrom:"2pm",
+      timeTo:"3pm",
+      attendee:"ew",
+      duration: 333,
+      modeOfTraining:"virtual class",
+      whatYouWillLearn: "e"
     },
   ],
 };
