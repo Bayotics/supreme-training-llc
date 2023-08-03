@@ -2502,7 +2502,7 @@ product-details-tab {
     #parallax-item {
       width: 29rem;
       height: 32rem;
-      margin-left: 45px;
+      margin-left: 50px;
     }
   
     .parallax-button-trending {
@@ -2515,6 +2515,10 @@ product-details-tab {
   
     .carousel-indicators {
       display: none;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      /* opacity: 1; */
     }
   
     .white-space-vertical {
@@ -2611,47 +2615,593 @@ product-details-tab {
       display: block;
     }
   }
+
+/* iphone 14 pro max */
+@media screen and (min-width: 601px) and (max-width: 650px) {
+  .hero-left {
+      display: none;
+    }
   
-  /* macbook and smaller laptop */
+    #main-hero {
+      height: 700px;
+    }
   
-  @media screen and (min-width: 1050px) and (max-width: 1210px) {
-    #parallax-item {
-      width: 21rem;
-      height: 33rem;
+    #mail-logo {
+      position: relative;
+      left: 250px;
+    }
+  
+    .fa-bars {
+      color: white;
+    }
+  
+    .hero-right {
+      width: 100%;
+    }
+  
+    .main-bg-captions {
+      margin-left: 75px;
+      text-align: center;
+      width: 80%;
+    }
+  
+    .main-bg-captions h1 {
+      text-align: center;
+      font-size: 54px;
+    }
+  
+    #basic-navbar-nav {
+      background-color: #262335;
+    }
+  
+    #search-bar {
+      width: 300px;
+    }
+  
+    #about-div {
+      top: 550px;
+    }
+  
+    #about-inner-div {
+      display: block;
+    }
+  
+    #about-text {
+      padding-left: 80px;
+      width: 90%;
+    }
+  
+    #about-text-box {
+      margin-left: 40px;
+    }
+  
+    .about-h1 h1 {
+      font-size: 42px;
+    }
+  
+    .about-text-box-p {
+      font-size: 18px;
+    }
+  
+    #about-card {
+      width: 100%;
+    }
+  
+    .row-main {
+      display: block;
+      margin-top: 50px
+    }
+  
+    .about-card-inner {
+      width: 100%;
+      margin-left: 0;
+      height: 650px;
+    }
+  
+    .about-p p {
+      font-size: 20px;
+    }
+  
+    .about-button {
+      text-align: center;
+    }
+  
+    #parallax-div {
+      top: 1700px;
     }
   
     #parallax-main {
+      display: block;
       height: 33rem;
-      padding-left: 20px;
+    }
+  
+    #parallax-item {
+      width: 30rem;
+      height: 32rem;
+      margin-left: 70px;
+    }
+    .parallax-description p{
+      font-size: 18px;
+    }
+    .parallax-button-trending {
+      width: 30%;
+    }
+  
+    .start-learning-button {
+      width: 80%;
+    }
+  
+    .carousel-indicators {
+      display: none;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      opacity: 1;
+    }
+    .white-space-vertical {
+      margin-top: 0;
+    }
+  
+    #whyus-div {
+      top: 1800px;
+    }
+  
+    .why-us-cover {
+      display: block;
+    }
+  
+    .why-us-cover-img {
+      display: none;
+    }
+  
+    .why-us-right-header {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .why-us-cover-brand {
+      width: 50%;
+    }
+  
+    .why-us-cover-brand-redhat {
+      display: none;
+    }
+  
+    .why-us-cover-brand-google {
+      margin-right: 10px;
+      width: 50%;
+    }
+  
+    #blog-div {
+      top: 1900px;
+    }
+  
+    .main-heading {
+      width: 60%;
+      margin: auto;
+    }
+  
+    .card {
+      width: 460px;
+    }
+  
+    .blog-cards-main {
+      display: block;
+      margin: auto;
+      padding-left: 50px;
+    }
+  
+    .blog-img {
+      margin-bottom: 40px;
+      width: 500px;
+    }
+  
+    #testimonials-div {
+      top: 1950px;
+    }
+  
+    .testimonials-section h5 {
+      font-size: 30px;
+    }
+  
+    .testimonials-section h1 {
+      font-size: 16px;
+    }
+  
+    #testimonial-cap {
+      width: 80%;
+    }
+  
+    #main-testimonial-cards {
+      display: block;
+    }
+  
+    .testimonial-card-main {
+      margin-bottom: 50px;
+    }
+  
+    footer {
+      top: 3150px;
+    }
+  
+    #footer-inner {
+      display: block;
+    }
+  
+    #footer-lower {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 651px) and (max-width: 699px) {
+  .hero-left {
+    display: none;
+  }
+
+  #main-hero {
+    height: 700px;
+  }
+
+  #mail-logo {
+    position: relative;
+    left: 270px;
+  }
+
+  .fa-bars {
+    color: white;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .main-bg-captions {
+    margin-left: 75px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .main-bg-captions h1 {
+    text-align: center;
+    font-size: 54px;
+  }
+
+  #basic-navbar-nav {
+    background-color: #262335;
+  }
+
+  #search-bar {
+    width: 300px;
+  }
+
+  #about-div {
+    top: 550px;
+  }
+
+  #about-inner-div {
+    display: block;
+  }
+
+  #about-text {
+    padding-left: 100px;
+    width: 90%;
+  }
+
+  #about-text-box {
+    margin-left: 40px;
+  }
+
+  .about-h1 h1 {
+    font-size: 42px;
+  }
+
+  .about-text-box-p {
+    font-size: 18px;
+  }
+
+  #about-card {
+    width: 100%;
+  }
+
+  .row-main {
+    display: block;
+    margin-top: 50px
+  }
+
+  .about-card-inner {
+    width: 100%;
+    margin-left: 0;
+    height: 650px;
+  }
+
+  .about-p p {
+    font-size: 20px;
+  }
+
+  .about-button {
+    text-align: center;
+  }
+
+  #parallax-div {
+    top: 1700px;
+  }
+
+  #parallax-main {
+    display: block;
+    height: 33rem;
+  }
+
+  #parallax-item {
+    width: 30rem;
+    height: 32rem;
+    margin-left: 95px;
+  }
+
+  .parallax-description p {
+    font-size: 18px;
+  }
+
+  .parallax-button-trending {
+    width: 30%;
+  }
+
+  .start-learning-button {
+    width: 80%;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    opacity: 1;
+  }
+
+  .white-space-vertical {
+    margin-top: 0;
+  }
+
+  #whyus-div {
+    top: 1800px;
+  }
+
+  .why-us-cover {
+    display: block;
+  }
+
+  .why-us-cover-img {
+    display: none;
+  }
+
+  .why-us-right-header {
+    text-align: center;
+    width: 100%;
+  }
+
+  .why-us-cover-brand {
+    width: 50%;
+  }
+
+  .why-us-cover-brand-redhat {
+    display: none;
+  }
+
+  .why-us-cover-brand-google {
+    margin-right: 10px;
+    width: 50%;
+  }
+
+  #blog-div {
+    top: 1900px;
+  }
+
+  .main-heading {
+    width: 60%;
+    margin: auto;
+  }
+
+  .card {
+    width: 460px;
+  }
+
+  .blog-cards-main {
+    display: block;
+    margin: auto;
+    padding-left: 70px;
+  }
+
+  .blog-img {
+    margin-bottom: 40px;
+    width: 520px;
+  }
+
+  #testimonials-div {
+    top: 1950px;
+  }
+
+  .testimonials-section h5 {
+    font-size: 30px;
+  }
+
+  .testimonials-section h1 {
+    font-size: 16px;
+  }
+
+  #testimonial-cap {
+    width: 80%;
+  }
+
+  #main-testimonial-cards {
+    display: block;
+  }
+
+  .testimonial-card-main {
+    margin-bottom: 50px;
+  }
+
+  footer {
+    top: 3150px;
+  }
+
+  #footer-inner {
+    display: block;
+  }
+
+  #footer-lower {
+    display: block;
+  }
+}
+
+
+ @media screen and (min-width: 700px) and (max-width: 799px) {
+    #about-text {
+      padding-left: 100px;
+      width: 90%;
+    }
+  
+    #about-text-box {
+      margin-left: 40px;
+    }
+  
+    .about-h1 h1 {
+      font-size: 42px;
+    }
+  
+    .about-text-box-p {
+      font-size: 18px;
+    }
+  
+    #about-card {
+      width: 100%;
+    }
+  
+    .skills-p {
+      width: 100%;
+    }
+  
+    .row-main {
+      margin-top: 50px;
+    }
+  
+    .about-card-inner {
+      height: 800px;
+    }
+  
+    .about-p p {
+      font-size: 24px;
+    }
+  
+    .about-promo p {
+      font-size: 24px;
+    }
+  
+    #parallax-div {
+      top: 1720px;
+    }
+  
+    #parallax-main {
+      display: block;
+      height: 33rem;
+    }
+
+    #parallax-item {
+      width: 34.2rem;
+      height: 32rem;
+      margin-left: 99px;
+    }
+
+    .parallax-description p {
+      font-size: 18px;
+    }
+
+    .parallax-button-trending {
+      width: 30%;
+    }
+
+    .start-learning-button {
+      width: 80%;
+    }
+
+    .carousel-indicators {
+      display: none;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      opacity: 1;
+    }
+  
+    #whyus-div {
+      top: 1800px;
+    }
+  
+    .parallax-button-trending {
+      height: 30px;
+      width: 50%;
+    }
+  
+    #blog-div {
+      top: 1850px;
     }
   
     .container-blog {
       margin: auto;
-      margin-left: 30px;
-      padding-left: 30px;
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+  
+    #testimonials-div {
+      top: 1900px;
+    }
+  
+    .testimonials-section h5 {
+      font-size: 30px;
+    }
+  
+    .testimonials-section h1 {
+      font-size: 16px;
+    }
+  
+    #testimonial-cap {
+      width: 80%;
     }
   
     #main-testimonial-cards {
-      margin: auto;
-      margin-top: 50px;
-      margin-left: 30px;
+      display: block;
+    }
+  
+    .testimonial-card-main {
+      margin-bottom: 50px;
     }
   
     footer {
-      position: relative;
-      top: 1400px;
+      top: 2900px;
+    }
+ }
+  
+ 
+ /* macbook and smaller laptop */
+
+@media screen and (min-width: 800px) and (max-width: 950px) {
+    #about-text {
+      padding-left: 100px;
+      width: 90%;
     }
   
-    .about-card-inner {
-      height: 660px;
+    #about-text-box {
+      margin-left: 40px;
     }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1049px) {
-  #about-text{
-    width: 460px;
-    
-  }
+  
+    .about-h1 h1 {
+      font-size: 42px;
+    }
+  
+    .about-text-box-p {
+      font-size: 18px;
+    }
+  
+    #about-card {
+      width: 100%;
+    }
   .skills-p {
     width: 100%;
   }
@@ -2659,28 +3209,34 @@ product-details-tab {
     margin-top: 50px;
   }
   .about-card-inner {
-    height: 880px;
+    height: 800px;
+  }
+  .about-p p{
+    font-size: 24px;
+  }
+  .about-promo p{
+    font-size: 24px;
   }
   #parallax-div {
-    top: 950px;
+    top: 1650px;
   }
   #parallax-main {
     height: 41rem;
-    padding-left: 0px;
+    padding-right: 10px;
   }
   #parallax-item {
     width: 15rem;
     height: 40rem;
   }
   #whyus-div {
-    top: 1150px;
+    top: 1800px;
   }
   .parallax-button-trending {
     height: 30px;
     width: 50%;
   }
   #blog-div {
-    top: 1250px;
+    top: 1850px;
   }
   .container-blog {
     margin: auto;
@@ -2688,9 +3244,95 @@ product-details-tab {
     padding-left: 10px;
   }
   #testimonials-div {
-    top: 1300px;
+    top: 1900px;
+  }
+  .testimonials-section h5 {
+    font-size: 30px;
+  }
+
+  .testimonials-section h1 {
+    font-size: 16px;
+  }
+
+  #testimonial-cap {
+    width: 80%;
+  }
+
+  #main-testimonial-cards {
+    display: block;
+  }
+
+  .testimonial-card-main {
+    margin-bottom: 50px;
   }
   footer{
-    top: 1800px;
+    top: 2900px;
   }
 }
+ @media screen and (min-width: 951px) and (max-width: 1049px) {
+  .about-wordings{
+    margin-top: 50px;
+  }
+  .about-card-inner {
+    height: 700px;
+  }
+  #parallax-div {
+    top: 850px;
+  }
+   #parallax-main {
+    height: 41rem;
+    padding-right: 10px;
+  }
+  #parallax-item {
+    width: 19rem;
+    height: 40rem;
+  }
+  .parallax-button-trending {
+    width: 40%;
+  }
+  #whyus-div {
+    top: 950px;
+  }
+  #blog-div {
+    top: 1050px;
+  }
+  footer{
+    top: 1400px;
+  }
+  .container-blog {
+    padding-left: 19px;
+  }
+ }
+
+ @media screen and (min-width: 1050px) and (max-width: 1210px) {
+   #parallax-item {
+     width: 21rem;
+     height: 33rem;
+   }
+
+   #parallax-main {
+     height: 33rem;
+     padding-left: 20px;
+   }
+
+   .container-blog {
+     margin: auto;
+     margin-left: 30px;
+     padding-left: 30px;
+   }
+
+   #main-testimonial-cards {
+     margin: auto;
+     margin-top: 50px;
+     margin-left: 30px;
+   }
+
+   footer {
+     position: relative;
+     top: 1400px;
+   }
+
+   .about-card-inner {
+     height: 660px;
+   }
+ }
