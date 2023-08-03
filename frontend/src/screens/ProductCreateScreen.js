@@ -11,6 +11,8 @@ import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Button from 'react-bootstrap/Button';
+import MenuBar from '../components/tiptap.jsx';
+
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -73,16 +75,27 @@ export default function ProductCreateScreen() {
   const [brand, setBrand] = useState('');
   const [description, setDescription] = useState('');
   const [longDescription, setLongDescription] = useState('');
+  const [courseOutline, setCourseOutline]  = useState('')
+  const [dateFrom, setDateFrom]  = useState('')
+  const [dateTo, setDateTo]  = useState('')
+  const [attendee, setAttendee]  = useState('')
+  const [duration, setDuration]  = useState('')
+  const [modeOfTraining, setModeOfTraining]  = useState('')
+  const [timeFrom, setTimeFrom]  = useState('')
+  const [timeTo, setTimeTo]  = useState('')
+  const [whatYouWillLearn, setWhatYouWillLearn]  = useState('')
 
   const categoriesList = [
-    "", "Food and Beverages", "Household Cleaning", "Drinks",
-    "Fragrance", "Hair Care", "Oral Care","furniture","Electronic Appliances",
-    "Phones and tablets","Computers and Computer Accessories","Generators and Portable power","Men Fashion",
-    "Women Fashion", "Watches", "glasses", "Baby Products", "Sporting accessories",
-    "Books", "Music", "Pets","Make Up", "skin care","gaming", "vehicles",
-    "Men Shoes", "Women Shoes", "others",
+    "", "(ISC)² (International Information System Security Certification Consortium)", "AWS", "Axelos",
+    "Checkpoint", "Cisco", "Cloud computing ","Electronic Appliances",
+    "Phones and tablets","Computers and Computer Accessories","CompTIA (Computing Technology Industry Association)",
+    "Computer security ",
+    "DevOps ", "EC-Council", "Information Management", "ISACA (Information Systems Audit and Control Association) ", 
+    "Management",
+    "Microsoft", "Oracle", "PMI (Project Management Institute) ","Red Hat ", "VMware", "others",
   ]
   categoriesList.sort();
+  const modeList = ['virtual class', 'physical class'];
 
   const submitHandler = async (e) => {
     console.log("Form is working")
@@ -100,7 +113,16 @@ export default function ProductCreateScreen() {
           brand: brand,
           countInStock: countInStock,
           description: description,
-          longDescription: description
+          longDescription: description,
+          courseOutline: courseOutline,
+          dateFrom: dateFrom,
+          dateTo: dateTo,
+          attendee: attendee,
+          duration: duration,
+          modeOfTraining: modeOfTraining,
+          timeFrom: timeFrom,
+          timeTo: timeTo,
+          whatYouWillLearn: whatYouWillLearn
         },
         {
           headers: { Authorization: `Bearer ${userInfo.token}` },
@@ -109,7 +131,7 @@ export default function ProductCreateScreen() {
       dispatch({
         type: 'UPDATE_SUCCESS',
       });
-      toast.success('Product updated successfully');
+      toast.success('Course updated successfully');
       navigate('/admin/products');
     } catch (err) {
       toast.error(getError(err));
@@ -154,9 +176,9 @@ export default function ProductCreateScreen() {
   return (
     <Container className="small-container">
       <Helmet>
-        <title>Create a new Product</title>
+        <title>Create a new Course</title>
       </Helmet>
-      <h1>Create a new Product</h1>
+      <h1>Create a new Course</h1>
         <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="title">
             <Form.Label>Name</Form.Label>
@@ -234,14 +256,14 @@ export default function ProductCreateScreen() {
               required
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="countInStock">
+          {/* <Form.Group className="mb-3" controlId="countInStock">
             <Form.Label>Count In Stock</Form.Label>
             <Form.Control
               value={countInStock}
               onChange={(e) => setCountInStock(e.target.value)}
               required
             />
-          </Form.Group>
+          </Form.Group> */}
           <Form.Group className="mb-3" controlId="description">
             <Form.Label>Description</Form.Label>
             <Form.Control
@@ -250,15 +272,91 @@ export default function ProductCreateScreen() {
               required
             />
           </Form.Group>
+          <Form.Group className="mb-3" controlId="duration">
+            <Form.Label>Duration</Form.Label>
+            <Form.Control
+              value={duration}
+              onChange={(e) => setDuration(e.target.value)}
+              required
+            />
+          </Form.Group>
           <Form.Group className="mb-3" controlId="longDescription">
             <Form.Label>Long Description</Form.Label>
             <Form.Control
-              placeholder='More details about your product. e.g color, size, etc'
+              placeholder='More details about the course. e.g intro, background, etc'
               value={longDescription}
               onChange={(e) => setLongDescription(e.target.value)}
               required
             />
-            </Form.Group>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="dateFrom">
+            <Form.Label>Date From</Form.Label>
+            <input type="date" id="dateFrom" name="dateFrom"
+              value={dateFrom}
+              onChange={(e) => setDateFrom(e.target.value)}
+              required
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="dateTo">
+            <Form.Label>Date to</Form.Label>
+            <input type="date" id="dateTo" name="dateTo" 
+              value={dateTo}
+              onChange={(e) => setDateTo(e.target.value)}
+              required
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="timeFrom">
+            <Form.Label>Start Time</Form.Label>
+             <input type="time" id="timeFrom" name="timeFrom"
+              value={timeFrom}
+              onChange={(e) => setTimeFrom(e.target.value)}
+              required
+             />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="timeTo">
+            <Form.Label>End Time</Form.Label>
+            <input type="time" id="timeTo" name="timeTo" 
+              value={timeTo} 
+              onChange={(e) => setTimeTo(e.target.value)}
+              required
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="courseOutline">
+            <Form.Label>Course Outline</Form.Label>
+              <MenuBar 
+              value={courseOutline} 
+              onChange={(e) => setCourseOutline(e.target.value)}
+              required/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="timeTo">
+            <Form.Label>Who Should attend?</Form.Label>
+              <MenuBar 
+              value={attendee} 
+              onChange={(e) => setAttendee(e.target.value)}
+              required/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="whatYouWillLearn">
+            <Form.Label>What you will learn</Form.Label>
+              <MenuBar 
+              value={whatYouWillLearn} 
+              onChange={(e) => setWhatYouWillLearn(e.target.value)}
+              required/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="modeOfTraining">
+            <Form.Label>Mode of training</Form.Label>
+            <Form.Control
+              as = "select"
+              value={modeOfTraining}
+              onChange={(e) => setModeOfTraining(e.target.value)}
+              required
+            >
+              {modeList.map((e) => {
+                return(
+                  <option key = {e}>{e}</option>
+                )
+              })}
+            </Form.Control>
+          </Form.Group>
           <div className="mb-3">
             <Button disabled={loadingUpdate} type="submit">
               Create

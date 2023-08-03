@@ -30,7 +30,8 @@ productRouter.post(
   isAuth,
   isAdmin,
   expressAsyncHandler(async (req, res) => {
-    const {title,image,price,category,brand,countInStock,rating,numReviews,description,longDescription } = req.body;
+    const {title,image,price,category,brand,countInStock,rating,numReviews,description,longDescription, 
+      courseOutline,dateFrom,dateTo,attendee,duration,modeOfTraining,timeFrom,timeTo,whatYouWillLearn } = req.body;
     const newProduct = new Product({
       title,
       image,
@@ -41,7 +42,8 @@ productRouter.post(
       rating,
       numReviews,
       description,
-      longDescription
+      longDescription,
+      courseOutline,dateFrom,dateTo,attendee,duration,modeOfTraining,timeFrom,timeTo,whatYouWillLearn
     });
     const product = await newProduct.save();
     res.send({ message: 'Product Created', product });
@@ -64,7 +66,17 @@ productRouter.put(
       product.brand = req.body.brand;
       product.countInStock = req.body.countInStock;
       product.description = req.body.description;
-      product.longDescrition = req.body.longDescription
+      product.longDescription = req.body.longDescription;
+      product.courseOutline = req.body.courseOutline;
+      product.dateFrom = new Date;
+      product.dateTo = new Date;
+      product.attendee = req.body.attendee;
+      product.duration = req.body.duration;
+      product.modeOfTraining = req.body.modeOfTraining;
+      product.timeFrom = new Date;
+      product.timeTo = new Date;
+      product.whatYouWillLearn = req.body.whatYouWillLearn;
+
       await product.save();
       res.send({ message: 'Product Updated' });
     } else {
