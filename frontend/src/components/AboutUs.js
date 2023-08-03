@@ -11,7 +11,7 @@ const AboutUs = () => {
                     <div className='' id = "about-text-box">
                         <h1>Acquire the skills to <span className='text-bold'>maintain a competitive edge in IT.</span></h1>
                     </div>
-                    <div className="container">
+                    <div className="container about-wordings">
                         <div className="row row-main">
                             <div className="col budget-cover">
                                 <div className='row'>
