@@ -78,6 +78,10 @@ function App() {
     };
     fetchCategories();
   }, []);
+  const formattedInfo = userInfo.name;
+  const formattedInfoToString = formattedInfo.toString().slice(0,8);
+  console.log(formattedInfo)
+  console.log(formattedInfoToString)
   return (
     <BrowserRouter>
       <div
@@ -126,7 +130,7 @@ function App() {
                     )}
                   </Link>
                   {userInfo ? (
-                    <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
+                    <NavDropdown title={formattedInfoToString} id="basic-nav-dropdown">
                       <LinkContainer to="/profile">
                         <NavDropdown.Item>Edit Profile</NavDropdown.Item>
                       </LinkContainer>

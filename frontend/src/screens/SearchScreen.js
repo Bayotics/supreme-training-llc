@@ -283,7 +283,7 @@ export default function SearchScreen() {
                 </Col>
               </Row>
               {products.length === 0 && (
-                <MessageBox>No Product Found</MessageBox>
+                <MessageBox>No Course Found</MessageBox>
               )}
 
               <Row id = 'products-list-row'>

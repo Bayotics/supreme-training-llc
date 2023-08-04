@@ -67,7 +67,7 @@ function HomeScreen() {
           <title>Supreme Training </title>
         </Helmet>
         <div id = "about-div">
-          <ScrollAnimation animateIn="fadeIn" duration={3000}>
+          <ScrollAnimation animateIn="fadeIn">
             <AboutUs />
           </ScrollAnimation>
         </div>

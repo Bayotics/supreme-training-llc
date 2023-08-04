@@ -1,6 +1,7 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import about from '../assets/aboutus.jpg'
+import { Link } from 'react-router-dom';
 
 
 const AboutUs = () => {
@@ -81,7 +82,9 @@ const AboutUs = () => {
                                 <p className=''>We are presently providing discounts of up to 30% on all Online Instructor-led courses. Ensure you take advantage of this opportunity!</p>
                             </div>
                             <div className='about-button mt-4'>
-                                <button className='about-button-btn text-bold'>Register Now!</button>
+                                <Link to={'/signin'} >
+                                    <button className='about-button-btn text-bold'>Register Now!</button>
+                                </Link>
                             </div>
                         </div>
                     </div> 

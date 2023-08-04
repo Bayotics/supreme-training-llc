@@ -88,12 +88,12 @@ export default function ProductCreateScreen() {
 
   const categoriesList = [
     "", "(ISC)² (International Information System Security Certification Consortium)", "AWS", "Axelos",
-    "Checkpoint", "Cisco", "Cloud computing ",
-    "Phones and tablets","CompTIA (Computing Technology Industry Association)",
+    "Checkpoint", "Cisco", "Cloud computing ","Alibaba",
+    "Azure","CompTIA", "IBM",
     "Computer security ",
     "DevOps ", "EC-Council", "Information Management", "ISACA (Information Systems Audit and Control Association) ", 
     "Management",
-    "Microsoft", "Oracle", "PMI (Project Management Institute) ","Red Hat ", "VMware", "others",
+    "Microsoft", "Oracle", "PMI (Project Management Institute) ","Red Hat ", "VMware","SAFe", "others",
   ]
   categoriesList.sort();
   const modeList = ['', 'virtual class', 'physical class'];

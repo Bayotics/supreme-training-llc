@@ -41,6 +41,7 @@ header{
   border-right: none;
   border-left: none;
   border-bottom: 1px solid white;
+  color: white;
 }
 
 #search-bar-inner::placeholder {
@@ -61,6 +62,9 @@ header{
 }
 .main-bg-captions h5{
   font-weight: 300;
+}
+.main-bg-btn-link{
+  padding-left: 0;
 }
 .btn-main{
   
@@ -101,7 +105,9 @@ header{
   position: relative;
   top: 1000px
 }
-
+.start-learning-link{
+  padding: 0;
+}
 #testimonials-div{
   position: relative;
   top: 1100px
