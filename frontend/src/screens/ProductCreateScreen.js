@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useReducer, useState } from 'react';
+import React, { useContext, useEffect, useReducer, useState, useRef} from 'react';
+import { Editor } from '@tinymce/tinymce-react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
@@ -97,7 +98,6 @@ export default function ProductCreateScreen() {
   categoriesList.sort();
   const modeList = ['', 'virtual class', 'physical class'];
   modeList.sort();
-
   const submitHandler = async (e) => {
     console.log("Form is working")
     e.preventDefault();
@@ -174,6 +174,37 @@ export default function ProductCreateScreen() {
   const cancelHandler = () => {
     navigate(`/admin/products`)
   }
+  const editorRef = useRef(null);
+  const log = () => {
+    if (editorRef.current) {
+      const textboxValue = editorRef.current.getContent();
+      setAttendee(textboxValue)
+      console.log(textboxValue);
+      console.log(attendee)
+    }
+  };
+ const editorRefOutline = useRef(null);
+  const logOutline = () => {
+    if (editorRefOutline.current) {
+      const textboxValueOutline = editorRefOutline.current.getContent();
+      setCourseOutline(textboxValueOutline)
+      console.log(textboxValueOutline);
+      console.log(courseOutline)
+    }
+  };
+  const editorReflearn = useRef(null);
+  const loglearn  = () => {
+    if (editorReflearn.current) {
+      const textboxValuelearn  = editorReflearn.current.getContent();
+      setWhatYouWillLearn(textboxValuelearn)
+      console.log(textboxValuelearn);
+      console.log(whatYouWillLearn)
+    }
+  };
+    const test = (e) => {
+      e.preventDefault()
+      console.log(attendee)
+    }
   return (
     <Container className="small-container">
       <Helmet>
@@ -283,6 +314,7 @@ export default function ProductCreateScreen() {
           </Form.Group>
           <Form.Group className="mb-3" controlId="longDescription">
             <Form.Label>Long Description</Form.Label>
+            
             <Form.Control
               className='long-input'
               placeholder='More details about the course. e.g intro, background, etc'
@@ -325,34 +357,95 @@ export default function ProductCreateScreen() {
           </Form.Group>
           <Form.Group className="mb-3" controlId="courseOutline">
             <Form.Label>Course Outline</Form.Label>
-              <Form.Control
+            <Editor
+                apiKey='wiws7jycfr7rujok7lvtm1xpyo2akb2nzwbjkp8gedoqbamz'
+                onInit={(evt, editor) => editorRefOutline.current = editor}
+                initialValue="<p>This is the initial content of the editor.</p>"
+                init={{
+                  height: 500,
+                  menubar: false,
+                  plugins: [
+                    'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                    'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                    'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
+                  ],
+                  toolbar: 'undo redo | blocks | ' +
+                    'bold italic forecolor | alignleft aligncenter ' +
+                    'alignright alignjustify | bullist numlist outdent indent | ' +
+                    'removeformat | help',
+                  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+                }}
+              />
+              <button onClick={logOutline}>Log editor content</button>
+              {/* <Form.Control
                 className='long-input'
                 id="courseOutline-input"
                 value={courseOutline} 
                 onChange={(e) => setCourseOutline(e.target.value)}
-                required/>
+                required/> */}
           </Form.Group>
           <Form.Group className="mb-3" controlId="timeTo">
             <Form.Label>Who Should attend?</Form.Label>
-              <Form.Control
+              {/* <Form.Control
                 className='long-input'
                 id="attendee-input"
                  value={attendee} 
               onChange={(e) => setAttendee(e.target.value)}
-              required/>
-              {/* <MenuBar 
-              value={attendee} 
-              onChange={(e) => setAttendee(e.target.value)}
               required/> */}
+              <Editor
+                      apiKey='wiws7jycfr7rujok7lvtm1xpyo2akb2nzwbjkp8gedoqbamz'
+                      onInit={(evt, editor) => editorRef.current = editor}
+                      initialValue="<p>This is the initial content of the editor.</p>"
+                      init={{
+                        height: 500,
+                        menubar: false,
+                        plugins: [
+                          'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                          'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                          'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
+                        ],
+                        toolbar: 'undo redo | blocks | ' +
+                          'bold italic forecolor | alignleft aligncenter ' +
+                          'alignright alignjustify | bullist numlist outdent indent | ' +
+                          'removeformat | help',
+                        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+                      }}
+                    />
+                    <button onClick={log}>Log editor content</button>
+              {/* <MenuBar 
+                value={attendee} 
+                onChange={(e) => setAttendee(e.target.value)}
+                required/> */}
           </Form.Group>
           <Form.Group className="mb-3" controlId="whatYouWillLearn">
             <Form.Label>What you will learn</Form.Label>
-              <Form.Control
+             <Editor
+                      apiKey='wiws7jycfr7rujok7lvtm1xpyo2akb2nzwbjkp8gedoqbamz'
+                      onInit={(evt, editor) => editorReflearn.current = editor}
+                      initialValue="<p>This is the initial content of the editor.</p>"
+                      init={{
+                        height: 500,
+                        menubar: false,
+                        plugins: [
+                          'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                          'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                          'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
+                        ],
+                        toolbar: 'undo redo | blocks | ' +
+                          'bold italic forecolor | alignleft aligncenter ' +
+                          'alignright alignjustify | bullist numlist outdent indent | ' +
+                          'removeformat | help',
+                        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+                      }}
+                    />
+                    <button onClick={loglearn}>Log editor content</button>
+              {/* <Form.Control
                 className='long-input'
                 id="courseOutline-input"
                 value={whatYouWillLearn} 
                 onChange={(e) => setWhatYouWillLearn(e.target.value)}
-              required />
+                required /> */}
+                     
               {/* <MenuBar 
               value={whatYouWillLearn} 
               onChange={(e) => setWhatYouWillLearn(e.target.value)}

@@ -130,6 +130,10 @@ function ProductScreen() {
             src={selectedImage || product.image}
             alt={product.title}
           ></img>
+          <div className='mt-8'>
+            <h1 className='text-bold'>Who this course is for</h1>
+            <p dangerouslySetInnerHTML={{__html: product.attendee}}></p>
+          </div>
         </Col>
         <Col md={6}>
           <ListGroup variant="flush">
@@ -171,7 +175,7 @@ function ProductScreen() {
                   <Row>
                     <Col>Status:</Col>
                     <Col>
-                      {product.countInStock > 0 ? (
+                      {product.countInStock >= 0 ? (
                         <Badge bg="success">In Stock</Badge>
                       ) : (
                         <Badge bg="danger">Unavailable</Badge>

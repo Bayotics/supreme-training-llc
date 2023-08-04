@@ -10,16 +10,16 @@ const ProductDetails = ({product, rating}) => {
                                     <p>{product.longDescription}</p>
                                 </div>
                             </div>;
-     const descriptionContent = <div className="tab-pane fade show active"    aria-labelledby="product-desc-link">
+     const attendeeContent = <div className="tab-pane fade show active"    aria-labelledby="product-desc-link">
                                     <div className="product-desc-content">
-                                        <h3>Product Information</h3>
-                                        <p>{product.description}</p>
+                                        <h3>Who Should attend?</h3>
+                                        <p dangerouslySetInnerHTML={{__html: product.attendee}}></p>
                                     </div>
                                 </div>;
         const courseOutline =  <div className="tab-pane fade show active" id="product-shipping-tab"   aria-labelledby="product-shipping-link">
                                 <div className="product-desc-content">
                                     <h3>Course Outline</h3>
-                                    <p>{product.courseOutline}</p>
+                                    <p dangerouslySetInnerHTML={{__html: product.courseOutline}}></p>
                                 </div>
                             </div>
         const reviewsContent = 
@@ -62,7 +62,7 @@ const ProductDetails = ({product, rating}) => {
         setContent(additionalInfoContent)
     }
     const secondMenuFunction = () => {
-        setContent(descriptionContent)
+        setContent(attendeeContent)
     }
     const thirdMenufunction = () => {
         setContent(courseOutline)
@@ -78,7 +78,7 @@ const ProductDetails = ({product, rating}) => {
                     <p className="nav-link" >Additional information</p>
                 </li>
                 <li className="nav-item" onClick = {secondMenuFunction}>
-                    <p className="nav-link" >Description</p>
+                    <p className="nav-link" >Who Should Attend?</p>
                 </li>
                 <li className="nav-item" onClick={thirdMenufunction}>
                     <p className="nav-link" >Course Outline</p>
