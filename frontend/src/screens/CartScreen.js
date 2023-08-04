@@ -20,7 +20,7 @@ export default function CartScreen() {
 
   const updateCartHandler = async (item, quantity) => {
     const { data } = await axios.get(`/api/products/${item._id}`);
-    if (data.countInStock < quantity) {
+    if (quantity > 1) {
       window.alert('Sorry. Product is out of stock');
       return;
     }
@@ -59,7 +59,7 @@ export default function CartScreen() {
               <tr>
                 <th>Image</th>
                 <th>Product name</th>
-                <th>Quantity</th>
+                {/* <th>Quantity</th> */}
                 <th>Price</th>
                 <th>Remove</th>
               </tr>
@@ -75,7 +75,7 @@ export default function CartScreen() {
                       ></img>
                 </td>
                 <td><Link to={`/product/${e._id}`}>{e.title}</Link></td>
-                <td>
+                {/* <td>
                   <Button
                         onClick={() =>
                           updateCartHandler(e, e.quantity - 1)
@@ -95,7 +95,7 @@ export default function CartScreen() {
                       >
                         <i className="fas fa-plus-circle"></i>
                       </Button>
-                </td>
+                </td> */}
                 <td>₦{e.price}</td>
                 <td><Button
                         onClick={() => removeItemHandler(e)}

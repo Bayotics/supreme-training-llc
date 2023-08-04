@@ -231,7 +231,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
   min-height: 250px;
 }
@@ -1086,6 +1086,9 @@ product-details-tab {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  height: 200px;
+  margin-top: 10px;
+  width: 100%;
 }
 #about-row{
   font-size: 14px;
@@ -1293,9 +1296,11 @@ product-details-tab {
 .navbar{
   /* background: #000000; */
 }
+#our-courses{
+  margin-bottom: 150px;
+}
 
-
-
+/* Courses page */
 
 
 

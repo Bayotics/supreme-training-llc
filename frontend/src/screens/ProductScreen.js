@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Form from 'react-bootstrap/Form';
 import Badge from 'react-bootstrap/Badge';
+import dayjs from 'dayjs'
 import Button from 'react-bootstrap/Button';
 import Rating from '../components/Rating';
 import ProductDetails from '../components/ProductDetails';
@@ -17,6 +18,8 @@ import { getError } from '../utils';
 import { Store } from '../Store';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import { toast } from 'react-toastify';
+
+
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -76,8 +79,8 @@ function ProductScreen() {
     console.log(product._id)
     const quantity = existItem ? existItem.quantity + 1 : 1;
     const { data } = await axios.get(`/api/products/${product._id}`);
-    if (data.countInStock < quantity) {
-      window.alert('Sorry. Product is out of stock');
+    if (quantity > 1) {
+      window.alert('Sorry. You already selected this course');
       return;
     }
     ctxDispatch({
@@ -86,6 +89,10 @@ function ProductScreen() {
     });
     navigate('/cart');
   };
+    // console.log(product.dateFrom)
+    // const formattedDate = product.dateFrom.toString().slice(0,10)
+    // console.log(formattedDate)
+    // const formattedDateTo = product.dateTo.toString().slice(0,10)
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -117,6 +124,9 @@ function ProductScreen() {
       dispatch({ type: 'CREATE_FAIL' });
     }
   };
+  const dayToformat = dayjs(product.dateTo).format("DD/MM/YYYY");
+  const dayFromformat = dayjs(product.dateFrom).format("DD/MM/YYYY");
+
   return loading ? (
     <LoadingBox />
   ) : error ? (
@@ -179,7 +189,7 @@ function ProductScreen() {
                   <Row>
                     <Col>Duration</Col>
                     <Col>
-                      <p>Online: {product.duration} 30 hours</p>
+                      <p>Online: {product.duration} hours</p>
                       {/* {product.countInStock >= 0 ? (
                         <Badge bg="success">In Stock</Badge>
                       ) : (
@@ -189,7 +199,7 @@ function ProductScreen() {
                   </Row>
                   <Row>
                     <Col>Date:</Col>
-                    <Col><p> {product.dateFrom} to {product.dateTo} </p></Col>
+                    <Col><p> {dayFromformat} to {dayToformat} </p></Col>
                   </Row>
                   <Row>
                     <Col>Time:</Col>

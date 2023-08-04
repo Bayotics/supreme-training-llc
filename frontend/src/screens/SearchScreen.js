@@ -156,7 +156,7 @@ export default function SearchScreen() {
         className="text-center"
         id='main-banner'>
           <Card.Body style={{marginTop: '60px'}}>
-              <span><h1 className='text-white fs-1'>Our Courses</h1></span>
+              <span id = "our-courses"><h1 className='text-white fs-1'>Our Courses</h1></span>
           </Card.Body>
         </Card>
       <Row id = "search-row" style={{marginTop: '90px'}}>

@@ -86,7 +86,7 @@ const PaymentScreen = () =>
               <tr>
                 <th>Pic</th>
                 <th>Name</th>
-                <th>Quantity</th>
+                {/* <th>Quantity</th> */}
                 <th>Price</th>
               </tr>
             </thead>
@@ -101,8 +101,8 @@ const PaymentScreen = () =>
                             className="img-fluid rounded img-thumbnail"
                     ></img>{' '}</td>
                   <td>{e.title}</td>
-                  <td>{e.quantity}</td>
-                  <td>₦{e.price} X {e.quantity}</td>
+                  {/* <td>{e.quantity}</td> */}
+                  <td>₦{e.price}</td>
               </tr>
               ))}
             </tbody>
