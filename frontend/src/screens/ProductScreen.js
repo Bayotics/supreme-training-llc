@@ -133,7 +133,14 @@ function ProductScreen() {
     <MessageBox variant="danger">{error}</MessageBox>
   ) : (
     <div className='product-screen-body'>
-      <Row>
+       <Card
+        className="text-center"
+        id='main-banner'>
+          <Card.Body>
+              <span id = "our-courses"><h1 className='text-white fs-1'> {product.title} </h1></span>
+          </Card.Body>
+        </Card>
+      <Row className='mt-12'>
         <Col md={6}>
           <img
             className="img-large"
@@ -141,8 +148,8 @@ function ProductScreen() {
             alt={product.title}
           ></img>
           <div className='mt-8'>
-            <h1 className='text-bold'>Additional Information</h1>
-            <p dangerouslySetInnerHTML={{__html: product.longDescription}}></p>
+            <h1 className=' text-bold'>Additional Information</h1>
+            <p className='' dangerouslySetInnerHTML={{__html: product.longDescription}}></p>
           </div>
           <div className='mt-8'>
             <h1 className='text-bold'>Who this course is for</h1>

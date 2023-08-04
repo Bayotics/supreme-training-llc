@@ -6,26 +6,26 @@ const ProductDetails = ({product, rating}) => {
     const reviewLength = product.reviews.length;
      const whatYouWillLearnContent = <div className="tab-pane fade show active" id="product-info-tab"   aria-labelledby="product-info-link">
                                 <div className="product-desc-content">
-                                    <h3>What you will learn</h3>
+                                    <h3 className= ''>What you will learn</h3>
                                     <p className="productDetails-p"dangerouslySetInnerHTML={{__html: product.whatYouWillLearn}}></p>
                                 </div>
                             </div>;
      const attendeeContent = <div className="tab-pane fade show active" aria-labelledby="product-desc-link">
                                     <div className="product-desc-content">
-                                        <h3>Who Should attend?</h3>
+                                        <h3 className= ''>Who Should attend?</h3>
                                         <p dangerouslySetInnerHTML={{__html: product.attendee}}></p>
                                     </div>
                                 </div>;
         const courseOutline =  <div className="tab-pane fade show active" id="product-shipping-tab"   aria-labelledby="product-shipping-link">
                                 <div className="product-desc-content">
-                                    <h3>Course Outline</h3>
+                                    <h3 className= ''>Course Outline</h3>
                                     <p dangerouslySetInnerHTML={{__html: product.courseOutline}}></p>
                                 </div>
                             </div>
         const reviewsContent = 
             <div className="tab-pane fade show active" id="product-review-tab"   aria-labelledby="product-review-link">
                 <div className="reviews">
-                    <h3>Reviews ({reviewLength})</h3>
+                    <h3 className= ''>Reviews ({reviewLength})</h3>
                     <div className="review">
                         <div className="row no-gutters">
                             <div className="mb-3">
@@ -75,16 +75,16 @@ const ProductDetails = ({product, rating}) => {
         <div>
             <ul className="nav nav-pills justify-content-center" role="tablist">
                  <li className="nav-item" onClick={firstMenufunction}>
-                    <p className="nav-link" >What you will learn</p>
+                    <p className="nav-link " >What you will learn</p>
                 </li>
                 <li className="nav-item" onClick = {secondMenuFunction}>
-                    <p className="nav-link" >Who Should Attend?</p>
+                    <p className="nav-link " >Who Should Attend?</p>
                 </li>
                 <li className="nav-item" onClick={thirdMenufunction}>
-                    <p className="nav-link" >Course Outline</p>
+                    <p className="nav-link " >Course Outline</p>
                 </li>
                 <li className="nav-item" onClick={fourthMenuContent}>
-                    <p className="nav-link" >Reviews</p>
+                    <p className="nav-link " >Reviews</p>
                 </li>
             </ul>
             <div className="tab-content">

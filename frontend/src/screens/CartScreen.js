@@ -22,7 +22,7 @@ export default function CartScreen() {
     const { data } = await axios.get(`/api/products/${item._id}`);
     if (quantity > 1) {
       window.alert('Sorry. You have already selected this course');
-      return;
+      return; 
     }
     ctxDispatch({
       type: 'CART_ADD_ITEM',

@@ -661,7 +661,8 @@ main {
 }
 
 .img-large {
-  max-width: 100%;
+  height: 300px;
+  width: 300px;
 }
 
 .img-thumbnail {
@@ -1042,6 +1043,9 @@ product-details-tab {
 #order-button{
   border-radius: 0;
 }
+#search-row{
+  margin-top: 290px;
+}
 #search-row li{
   list-style-type: none;
 }
@@ -1085,10 +1089,14 @@ product-details-tab {
   background-image: url(./assets/hero-6.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 200px;
   margin-top: 10px;
+  position: absolute;
+  top: 0;
   width: 100%;
+  left: 0;
+  margin: 0;
+  border-radius: 0;
+  height: 350px;
 }
 #about-row{
   font-size: 14px;
@@ -1291,15 +1299,25 @@ product-details-tab {
   line-height: 3;
 }
 .product-screen-body{
-  /* background-image: #47bcd4; */
+  /* background: -webkit-linear-gradient(to right, #FFFFFF, #e7d186);
+  background: linear-gradient(to right, #d7c2db, #ce33b9); */
+  /* background-image: url(../src/assets/test_bg2.jpg); */
+  background-size: cover;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  padding-top: 150px;
+  /* position: absolute; */
 }
 .navbar{
   /* background: #000000; */
 }
 #our-courses{
-  margin-bottom: 150px;
+  margin-top: 50px;
 }
-
+.mt-12{
+  margin-top: 100px;
+}
 /* Courses page */
 
 
@@ -1519,6 +1537,9 @@ product-details-tab {
   #footer-lower {
     display: block;
   }
+  #products-list-row{
+    display: block;
+  }
 }
 
 
@@ -1657,6 +1678,9 @@ product-details-tab {
     }
 
     #footer-lower {
+      display: block;
+    }
+    #products-list-row {
       display: block;
     }
   }
@@ -1833,6 +1857,9 @@ product-details-tab {
     }
 
     #footer-lower {
+      display: block;
+    }
+    #products-list-row {
       display: block;
     }
   }
@@ -2018,6 +2045,9 @@ product-details-tab {
     #footer-lower {
       display: block;
     }
+    #products-list-row {
+      display: block;
+    }
 }
 
 @media screen and (min-width: 421px) and (max-width: 480px) {
@@ -2201,6 +2231,9 @@ product-details-tab {
     }
   
     #footer-lower {
+      display: block;
+    }
+    #products-list-row {
       display: block;
     }
 }
@@ -2423,6 +2456,9 @@ product-details-tab {
   .about-card-inner{
     height: 660px;
   }
+  #products-list-row {
+    display: block;
+  }
 }
 
 /* iphone 14 pro */
@@ -2629,6 +2665,9 @@ product-details-tab {
     }
   
     #footer-lower {
+      display: block;
+    }
+    #products-list-row {
       display: block;
     }
   }
@@ -2846,6 +2885,9 @@ product-details-tab {
     }
   
     #footer-lower {
+      display: block;
+    }
+    #products-list-row {
       display: block;
     }
   }

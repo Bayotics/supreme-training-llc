@@ -152,14 +152,14 @@ export default function SearchScreen() {
       <Helmet>
         <title>Search Products</title>
       </Helmet>
-       <Card style={{height: '200px', marginTop: '10px'}}
+       <Card
         className="text-center"
         id='main-banner'>
-          <Card.Body style={{marginTop: '60px'}}>
+          <Card.Body>
               <span id = "our-courses"><h1 className='text-white fs-1'>Our Courses</h1></span>
           </Card.Body>
         </Card>
-      <Row id = "search-row" style={{marginTop: '90px'}}>
+      <Row id = "search-row">
         <Col md={3}>
           <div>
             <Card style = {{width: '18rem'}} >
@@ -286,7 +286,7 @@ export default function SearchScreen() {
                 <MessageBox>No Product Found</MessageBox>
               )}
 
-              <Row>
+              <Row id = 'products-list-row'>
                 {products.map((product) => (
                   <Col sm={6} lg={4} className="mb-3" key={product._id}>
                     <Product product={product}></Product>
