@@ -1284,7 +1284,15 @@ product-details-tab {
   padding: 2;
   margin: 0;
 }
-
+.productDetails-p{
+  line-height: 3;
+}
+.product-screen-body{
+  /* background-image: #47bcd4; */
+}
+.navbar{
+  /* background: #000000; */
+}
 
 
 

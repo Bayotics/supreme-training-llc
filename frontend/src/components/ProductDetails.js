@@ -4,13 +4,13 @@ import MessageBox from '../components/MessageBox';
 
 const ProductDetails = ({product, rating}) => {
     const reviewLength = product.reviews.length;
-     const additionalInfoContent = <div className="tab-pane fade show active" id="product-info-tab"   aria-labelledby="product-info-link">
+     const whatYouWillLearnContent = <div className="tab-pane fade show active" id="product-info-tab"   aria-labelledby="product-info-link">
                                 <div className="product-desc-content">
-                                    <h3>Additional Information</h3>
-                                    <p>{product.longDescription}</p>
+                                    <h3>What you will learn</h3>
+                                    <p className="productDetails-p"dangerouslySetInnerHTML={{__html: product.whatYouWillLearn}}></p>
                                 </div>
                             </div>;
-     const attendeeContent = <div className="tab-pane fade show active"    aria-labelledby="product-desc-link">
+     const attendeeContent = <div className="tab-pane fade show active" aria-labelledby="product-desc-link">
                                     <div className="product-desc-content">
                                         <h3>Who Should attend?</h3>
                                         <p dangerouslySetInnerHTML={{__html: product.attendee}}></p>
@@ -57,9 +57,9 @@ const ProductDetails = ({product, rating}) => {
                     </div>
                 </div>
             </div>
-    const [content, setContent] = useState(additionalInfoContent);
+    const [content, setContent] = useState(whatYouWillLearnContent);
     const firstMenufunction = () => {
-        setContent(additionalInfoContent)
+        setContent(whatYouWillLearnContent)
     }
     const secondMenuFunction = () => {
         setContent(attendeeContent)
@@ -75,7 +75,7 @@ const ProductDetails = ({product, rating}) => {
         <div>
             <ul className="nav nav-pills justify-content-center" role="tablist">
                  <li className="nav-item" onClick={firstMenufunction}>
-                    <p className="nav-link" >Additional information</p>
+                    <p className="nav-link" >What you will learn</p>
                 </li>
                 <li className="nav-item" onClick = {secondMenuFunction}>
                     <p className="nav-link" >Who Should Attend?</p>

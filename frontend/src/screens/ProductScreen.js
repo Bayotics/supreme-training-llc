@@ -122,7 +122,7 @@ function ProductScreen() {
   ) : error ? (
     <MessageBox variant="danger">{error}</MessageBox>
   ) : (
-    <div>
+    <div className='product-screen-body'>
       <Row>
         <Col md={6}>
           <img
@@ -130,6 +130,10 @@ function ProductScreen() {
             src={selectedImage || product.image}
             alt={product.title}
           ></img>
+          <div className='mt-8'>
+            <h1 className='text-bold'>Additional Information</h1>
+            <p dangerouslySetInnerHTML={{__html: product.longDescription}}></p>
+          </div>
           <div className='mt-8'>
             <h1 className='text-bold'>Who this course is for</h1>
             <p dangerouslySetInnerHTML={{__html: product.attendee}}></p>
@@ -173,17 +177,26 @@ function ProductScreen() {
             </ListGroup.Item>
             <ListGroup.Item>
                   <Row>
-                    <Col>Status:</Col>
+                    <Col>Duration</Col>
                     <Col>
-                      {product.countInStock >= 0 ? (
+                      <p>Online: {product.duration} 30 hours</p>
+                      {/* {product.countInStock >= 0 ? (
                         <Badge bg="success">In Stock</Badge>
                       ) : (
                         <Badge bg="danger">Unavailable</Badge>
-                      )}
+                      )} */}
                     </Col>
                   </Row>
+                  <Row>
+                    <Col>Date:</Col>
+                    <Col><p> {product.dateFrom} to {product.dateTo} </p></Col>
+                  </Row>
+                  <Row>
+                    <Col>Time:</Col>
+                    <Col><p> {product.timeFrom} to {product.timeTo} daily, (Monday - Friday)</p></Col>
+                  </Row>
             </ListGroup.Item>
-            {product.countInStock > 0 && (
+            {product.countInStock >= 0 && (
                   <ListGroup.Item>
                     <div className="d-grid">
                       <Button onClick={addToCartHandler} variant="primary">

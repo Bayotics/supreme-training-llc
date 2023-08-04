@@ -88,8 +88,8 @@ export default function ProductCreateScreen() {
 
   const categoriesList = [
     "", "(ISC)² (International Information System Security Certification Consortium)", "AWS", "Axelos",
-    "Checkpoint", "Cisco", "Cloud computing ","Electronic Appliances",
-    "Phones and tablets","Computers and Computer Accessories","CompTIA (Computing Technology Industry Association)",
+    "Checkpoint", "Cisco", "Cloud computing ",
+    "Phones and tablets","CompTIA (Computing Technology Industry Association)",
     "Computer security ",
     "DevOps ", "EC-Council", "Information Management", "ISACA (Information Systems Audit and Control Association) ", 
     "Management",
@@ -376,7 +376,7 @@ export default function ProductCreateScreen() {
                   content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
                 }}
               />
-              <button onClick={logOutline}>Log editor content</button>
+              <button onClick={logOutline}>Save</button>
               {/* <Form.Control
                 className='long-input'
                 id="courseOutline-input"
@@ -395,7 +395,7 @@ export default function ProductCreateScreen() {
               <Editor
                       apiKey='wiws7jycfr7rujok7lvtm1xpyo2akb2nzwbjkp8gedoqbamz'
                       onInit={(evt, editor) => editorRef.current = editor}
-                      initialValue="<p>This is the initial content of the editor.</p>"
+                      initialValue="<p>Type here</p>"
                       init={{
                         height: 500,
                         menubar: false,
@@ -411,7 +411,7 @@ export default function ProductCreateScreen() {
                         content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
                       }}
                     />
-                    <button onClick={log}>Log editor content</button>
+                    <button onClick={log}>Save</button>
               {/* <MenuBar 
                 value={attendee} 
                 onChange={(e) => setAttendee(e.target.value)}
@@ -422,7 +422,7 @@ export default function ProductCreateScreen() {
              <Editor
                       apiKey='wiws7jycfr7rujok7lvtm1xpyo2akb2nzwbjkp8gedoqbamz'
                       onInit={(evt, editor) => editorReflearn.current = editor}
-                      initialValue="<p>This is the initial content of the editor.</p>"
+                      initialValue="<p>Type here.</p>"
                       init={{
                         height: 500,
                         menubar: false,
@@ -438,7 +438,7 @@ export default function ProductCreateScreen() {
                         content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
                       }}
                     />
-                    <button onClick={loglearn}>Log editor content</button>
+                    <button onClick={loglearn}>Save</button>
               {/* <Form.Control
                 className='long-input'
                 id="courseOutline-input"
