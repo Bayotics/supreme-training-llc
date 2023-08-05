@@ -115,12 +115,31 @@ function App() {
               <Navbar.Collapse id="basic-navbar-nav">
                   <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
-                      {/* <Link to = "/" className='nav-link text-white bold-text'>COURSES</Link> */}
+                    <div className='nav-options-main'>
                       <Link 
                       to = "/search?category=all&query=all&price=all&rating=all&order=newest&page=1" 
                       className='nav-link text-white bold-text'>COURSES</Link>
                       <Link to = "/" className='nav-link text-white bold-text'>CERTIFICATIONS</Link>
-                      <Link to = "/" className='nav-link text-white bold-text' id = "contact-nav">COMPANY</Link>
+                      <Link to = "#" className='nav-link text-white'><div className="menu-wrap">
+                          <ul className="menu">
+                              <li className="menu-item ">
+                                  <a href="home-nav">COMPANY</a>
+                                  <ul className="drop-menu">
+                                      <li className="drop-menu-item">
+                                          <a href="#">About us</a>
+                                      </li>
+                                      <li className="drop-menu-item">
+                                          <a href="#">Certifications</a>
+                                      </li>
+                                      <li className="drop-menu-item">
+                                          <a href="#">Contact Us</a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                        </div>
+                      </Link>
+                    </div>
                   <Link to="/cart" className="nav-link text-white">
                     <i className="fas fa-shopping-cart"></i>
                     {cart.cartItems.length > 0 && (

@@ -78,7 +78,7 @@ const Footer = () => {
                     </div>
                      <div className="">
                         <div className="footer-link-contact mt-4">
-                            <p><i className="fas fa-map-marker-alt"></i> .......,
+                            <p><i className="fas fa-map-marker-alt"></i>220-44 137th Avenue, Jamaica, New York 11413
                             </p>
                             <p><i className="fas fa-phone-square"></i><Link to={"tel:+1-6319336332"}>+1 (631) 933-6332</Link></p>
                             <p><i className="fas fa-envelope"></i> <Link to = {"mailto:ashobal@sinfosecurity.com"}>ashobal@sinfosecurity.com</Link></p>
