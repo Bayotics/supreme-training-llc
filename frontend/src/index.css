@@ -553,7 +553,7 @@ a {
   margin: 0;
 }
 
-.menu-item a {
+.menu-item h6 {
   text-decoration: none;
   color: #fff;
   display: block;
@@ -580,7 +580,7 @@ a {
   /* transition: all 1s ease-in; */
 }
 
-.drop-menu-item a {
+.drop-menu-item h6 {
   color: white;
   font-weight: 100;
   margin-left: 20px;
@@ -588,7 +588,7 @@ a {
   font-size: 16px;
 }
 
-.drop-menu-item a:hover {
+.drop-menu-item h6:hover {
   color: #000000;
 }
 

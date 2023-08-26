@@ -58,13 +58,6 @@ function App() {
   };
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   const [categories, setCategories] = useState([]);
-  // const [mode, setMode] = useState(currentMode)
-  // const [bgmode, setBgMode] = useState(false);
-
-  // const darkMode = () => {
-  //   setMode("bg-dark")
-  //   setBgMode(!bgmode)
-  // }
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -78,10 +71,11 @@ function App() {
     };
     fetchCategories();
   }, []);
-  const formattedInfo = userInfo.name;
-  const formattedInfoToString = formattedInfo.toString().slice(0,8);
-  console.log(formattedInfo)
-  console.log(formattedInfoToString)
+  // console.log(userInfo)
+  // const formattedInfo = userInfo.name;
+  // const formattedInfoToString = formattedInfo.toString().slice(0,8);
+  // console.log(formattedInfo)
+  // console.log(formattedInfoToString)
   return (
     <BrowserRouter>
       <div
@@ -123,16 +117,16 @@ function App() {
                       <Link to = "#" className='nav-link text-white'><div className="menu-wrap">
                           <ul className="menu">
                               <li className="menu-item ">
-                                  <a href="home-nav">COMPANY</a>
+                                  <h6>COMPANY</h6>
                                   <ul className="drop-menu">
                                       <li className="drop-menu-item">
-                                          <a href="#">About us</a>
+                                          <h6>About us</h6>
                                       </li>
                                       <li className="drop-menu-item">
-                                          <a href="#">Certifications</a>
+                                          <h6>Certifications</h6>
                                       </li>
                                       <li className="drop-menu-item">
-                                          <a href="#">Contact Us</a>
+                                          <h6>Contact Us</h6>
                                       </li>
                                   </ul>
                               </li>
@@ -149,7 +143,7 @@ function App() {
                     )}
                   </Link>
                   {userInfo ? (
-                    <NavDropdown title={formattedInfoToString} id="basic-nav-dropdown">
+                    <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
                       <LinkContainer to="/profile">
                         <NavDropdown.Item>Edit Profile</NavDropdown.Item>
                       </LinkContainer>

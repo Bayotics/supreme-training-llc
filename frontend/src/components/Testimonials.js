@@ -24,8 +24,8 @@ const Testimonials = () => {
                         <div id='testimonial-text'>
                             <p>
                                 <span>
-                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I have had an incredible experience with supreme training. The courses are well-structured, engaging, and taught by industry experts. Thanks to their user-friendly platform, I was able to balance learning with my busy schedule. I highly recommend their services to anyone seeking to upskill or advance their career!" - 
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                    <i className="fa fa-quote-left" aria-hidden="true"></i></span>I have had an incredible experience with supreme training. The courses are well-structured, engaging, and taught by industry experts. Thanks to their user-friendly platform, I was able to balance learning with my busy schedule. I highly recommend their services to anyone seeking to upskill or advance their career!" - 
+                                <i className="fa fa-quote-right" aria-hidden="true"></i>
                             </p>
                         </div>
                         <p className='text-center text-bold'> Jane</p>
@@ -42,8 +42,8 @@ const Testimonials = () => {
                         <div id='testimonial-text'>
                             <p>
                                 <span>
-                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I am delighted with the quality of training I received from supreme .The customer service team was prompt and helpful in addressing any queries. I am genuinely grateful for the positive impact this training has had on my AWS career growth
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                    <i className="fa fa-quote-left" aria-hidden="true"></i></span>I am delighted with the quality of training I received from supreme .The customer service team was prompt and helpful in addressing any queries. I am genuinely grateful for the positive impact this training has had on my AWS career growth
+                                <i className="fa fa-quote-right" aria-hidden="true"></i>
                             </p>
                         </div>
                         <p className='text-center text-bold'>Olivia</p>
@@ -60,8 +60,8 @@ const Testimonials = () => {
                         <div id='testimonial-text'>
                             <p>
                                 <span>
-                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I couldn't be happier with the CISA certification I earned through this training company. The variety of courses offered allowed me to explore different fields and choose the ones that aligned with my interests. The learning materials are top-notch, and the interactive exercises make learning enjoyable.  
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                    <i className="fa fa-quote-left" aria-hidden="true"></i></span>I couldn't be happier with the CISA certification I earned through this training company. The variety of courses offered allowed me to explore different fields and choose the ones that aligned with my interests. The learning materials are top-notch, and the interactive exercises make learning enjoyable.  
+                                <i className="fa fa-quote-right" aria-hidden="true"></i>
                             </p>
                         </div>
                         <p className='text-center text-bold'>Ella</p>
@@ -78,8 +78,8 @@ const Testimonials = () => {
                         <div id='testimonial-text'>
                             <p>
                                 <span>
-                                    <i class="fa fa-quote-left" aria-hidden="true"></i></span>I highly recommend supreme training to anyone looking to enhance their expertise. As a seasoned professional, I was initially skeptical about online learning, but this platform exceeded my expectations. The courses were challenging yet manageable, and the real-world applications helped me apply my knowledge immediately. 
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                    <i className="fa fa-quote-left" aria-hidden="true"></i></span>I highly recommend supreme training to anyone looking to enhance their expertise. As a seasoned professional, I was initially skeptical about online learning, but this platform exceeded my expectations. The courses were challenging yet manageable, and the real-world applications helped me apply my knowledge immediately. 
+                                <i className="fa fa-quote-right" aria-hidden="true"></i>
                             </p>
                         </div>
                         <p className='text-center text-bold'>Lizzy</p>
